@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>使用vuepress构建博客</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/avatar.jpg">
+    <link rel="stylesheet" href="/css/style.css">
+    <script charset="utf-8" src="/js/main.js"></script>
+    <meta name="description" content=" ">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.1df12b1e.css" as="style"><link rel="preload" href="/assets/js/app.3ff6674a.js" as="script"><link rel="preload" href="/assets/js/3.fb157255.js" as="script"><link rel="preload" href="/assets/js/1.a81a99ec.js" as="script"><link rel="preload" href="/assets/js/28.86fd88a9.js" as="script"><link rel="prefetch" href="/assets/js/10.de054c2d.js"><link rel="prefetch" href="/assets/js/11.9725be6d.js"><link rel="prefetch" href="/assets/js/12.58f91f83.js"><link rel="prefetch" href="/assets/js/13.371e93b3.js"><link rel="prefetch" href="/assets/js/14.b5517161.js"><link rel="prefetch" href="/assets/js/15.05d12a84.js"><link rel="prefetch" href="/assets/js/16.7d5b3e94.js"><link rel="prefetch" href="/assets/js/17.a78c4fea.js"><link rel="prefetch" href="/assets/js/18.9dcc79cc.js"><link rel="prefetch" href="/assets/js/19.a18e66db.js"><link rel="prefetch" href="/assets/js/20.bcef70e0.js"><link rel="prefetch" href="/assets/js/21.3fbd0ece.js"><link rel="prefetch" href="/assets/js/22.e7d4c368.js"><link rel="prefetch" href="/assets/js/23.7a2dce09.js"><link rel="prefetch" href="/assets/js/24.daee911b.js"><link rel="prefetch" href="/assets/js/25.53acc546.js"><link rel="prefetch" href="/assets/js/26.a525c3cb.js"><link rel="prefetch" href="/assets/js/27.67d5bb54.js"><link rel="prefetch" href="/assets/js/29.762a3314.js"><link rel="prefetch" href="/assets/js/30.d2488690.js"><link rel="prefetch" href="/assets/js/31.efa93e5b.js"><link rel="prefetch" href="/assets/js/4.d4395a41.js"><link rel="prefetch" href="/assets/js/5.dcf7c645.js"><link rel="prefetch" href="/assets/js/6.c7819f09.js"><link rel="prefetch" href="/assets/js/7.6c0db3bc.js"><link rel="prefetch" href="/assets/js/8.ab69b5e8.js"><link rel="prefetch" href="/assets/js/9.991c5b39.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1df12b1e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-1156296a><div data-v-1156296a><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-1156296a data-v-1156296a><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-4e82dffc data-v-1156296a data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc></h3> <p class="description" data-v-4e82dffc data-v-4e82dffc> </p> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>阿张blog</span>
+            
+          <span data-v-4e82dffc>2021 - </span>
+          2023
+        </a></span></div></div> <div class="hide" data-v-1156296a><header class="navbar" data-v-1156296a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/avatar.jpg" alt="" class="logo"> <!----></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/axios/" class="nav-link"><i class="undefined"></i>
+  axios
+</a></li><li class="dropdown-item"><!----> <a href="/categories/git/" class="nav-link"><i class="undefined"></i>
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/categories/其它/" class="nav-link"><i class="undefined"></i>
+  其它
+</a></li><li class="dropdown-item"><!----> <a href="/categories/测试/" class="nav-link"><i class="undefined"></i>
+  测试
+</a></li><li class="dropdown-item"><!----> <a href="/categories/threejs/" class="nav-link"><i class="undefined"></i>
+  threejs
+</a></li><li class="dropdown-item"><!----> <a href="/categories/ts/" class="nav-link"><i class="undefined"></i>
+  ts
+</a></li><li class="dropdown-item"><!----> <a href="/categories/vue/" class="nav-link"><i class="undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/categories/webpack/" class="nav-link"><i class="undefined"></i>
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/categories/yarn/" class="nav-link"><i class="undefined"></i>
+  yarn
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-1156296a></div> <aside class="sidebar" data-v-1156296a><div class="personal-info-wrapper" data-v-828910c6 data-v-1156296a><img src="/avatar.jpg" alt="author-avatar" class="personal-img" data-v-828910c6> <h3 class="name" data-v-828910c6>
+    阿张blog
+  </h3> <div class="num" data-v-828910c6><div data-v-828910c6><h3 data-v-828910c6>21</h3> <h6 data-v-828910c6>文章</h6></div> <div data-v-828910c6><h3 data-v-828910c6>4</h3> <h6 data-v-828910c6>标签</h6></div></div> <ul class="social-links" data-v-828910c6></ul> <hr data-v-828910c6></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/axios/" class="nav-link"><i class="undefined"></i>
+  axios
+</a></li><li class="dropdown-item"><!----> <a href="/categories/git/" class="nav-link"><i class="undefined"></i>
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/categories/其它/" class="nav-link"><i class="undefined"></i>
+  其它
+</a></li><li class="dropdown-item"><!----> <a href="/categories/测试/" class="nav-link"><i class="undefined"></i>
+  测试
+</a></li><li class="dropdown-item"><!----> <a href="/categories/threejs/" class="nav-link"><i class="undefined"></i>
+  threejs
+</a></li><li class="dropdown-item"><!----> <a href="/categories/ts/" class="nav-link"><i class="undefined"></i>
+  ts
+</a></li><li class="dropdown-item"><!----> <a href="/categories/vue/" class="nav-link"><i class="undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/categories/webpack/" class="nav-link"><i class="undefined"></i>
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/categories/yarn/" class="nav-link"><i class="undefined"></i>
+  yarn
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div> <!----></nav> <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Vue</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blogs/vue/2021/vuepress.html" aria-current="page" class="active sidebar-link">使用vuepress构建博客</a></li><li><a href="/blogs/vue/2021/vuetailwindcss.html" class="sidebar-link">vue2.6.1安装tailwindcss</a></li><li><a href="/blogs/vue/2021/componentInteraction.html" class="sidebar-link">vue3.2中setup语法糖组件间通信</a></li><li><a href="/blogs/vue/2021/virtualList.html" class="sidebar-link">虚拟列表</a></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-4e82dffc data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>使用vuepress构建博客</h3> <!----> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>阿张blog</span>
+            
+          <span data-v-4e82dffc>2021 - </span>
+          2023
+        </a></span></div></div> <div data-v-1156296a><main class="page"><section><div class="page-title"><h1 class="title">使用vuepress构建博客</h1> <div data-v-1ff7123e><i class="iconfont reco-account" data-v-1ff7123e><span data-v-1ff7123e>阿张blog</span></i> <i class="iconfont reco-date" data-v-1ff7123e><span data-v-1ff7123e>2021/12/5</span></i> <!----> <i class="tags iconfont reco-tag" data-v-1ff7123e><span class="tag-item" data-v-1ff7123e>前端</span></i></div></div> <div class="theme-reco-content content__default"><div class="custom-block tip"><p class="title"></p><p>博客搭建</p></div> <h1 id="使用vuepress构建博客"><a href="#使用vuepress构建博客" class="header-anchor">#</a> 使用vuepress构建博客</h1> <blockquote><p>Vue 驱动的静态网站生成器。官方文档<a href="https://vuepress.vuejs.org/zh/" target="_blank" rel="noopener noreferrer">立即前往<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></blockquote> <p>使用<strong>vuepress</strong>之前请确保你本地的<strong>node</strong>环境</p> <p><strong>vuepress</strong>是尤雨溪18年4月12日发布的vue静态网站生成器，支持<code>vue语法</code>，内置<code>webpack</code>，每一个由<strong>vuepress</strong>生成的页面都是通过<code>SSR</code>预渲染的<code>HTML</code>，也因此具有非常好的加载性能和搜索引擎优化，<strong>vuepress</strong>非常适合用来做项目文档，现在越来越多的人用来写博客，这次文章就是一个简单的使用教程和主题推荐</p> <p>vuepress不限于使用markdown、vue组件、html</p> <h2 id="reco主题"><a href="#reco主题" class="header-anchor">#</a> reco主题</h2> <blockquote><p>一款简洁而优雅的 vuepress 博客 &amp; 文档 主题。官方文档<a href="https://vuepress-theme-reco.recoluan.com/" target="_blank" rel="noopener noreferrer">立即前往<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></blockquote> <p><img src="https://img.lookroot.cn/blog/202005/15/152702-539475.png" alt="image-20200515152702435"></p> <p>我们打乱一下顺序，先介绍这个主题，reco主题提供了脚手架可以实现一键创建vuepress项目，并且这个主题是为博客量身打造，节省掉我们配置项目的时间，用来专心书写内容</p> <h3 id="快速开始"><a href="#快速开始" class="header-anchor">#</a> 快速开始</h3> <p><strong>npx</strong></p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code>npx @vuepress-reco/theme-cli init my-blog
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><strong>npm</strong></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 初始化</span>
+<span class="token function">npm</span> <span class="token function">install</span> @vuepress-reco/theme-cli -g
+theme-cli init my-blog
+
+<span class="token comment"># 安装</span>
+<span class="token builtin class-name">cd</span> my-blog
+<span class="token function">npm</span> <span class="token function">install</span>
+
+<span class="token comment"># 运行</span>
+<span class="token function">npm</span> run dev
+
+<span class="token comment"># 编译</span>
+<span class="token function">npm</span> run build
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p><strong>yarn</strong></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 初始化</span>
+<span class="token function">yarn</span> global <span class="token function">add</span> @vuepress-reco/theme-cli
+theme-cli init my-blog
+
+<span class="token comment"># 安装</span>
+<span class="token builtin class-name">cd</span> my-blog
+<span class="token function">yarn</span> <span class="token function">install</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="实践一下"><a href="#实践一下" class="header-anchor">#</a> 实践一下</h3> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code>npx @vuepress-reco/theme-cli init recodemo
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>然后进入<code>recodemo</code>文件夹使用 <code>npm i</code>命令下载一下依赖</p> <p>然后打开 <code>recodemo\docs\.vuepress\config.js</code>,配置一些自定义信息，具体的可配置信息<a href="https://vuepress-theme-reco.recoluan.com/views/1.x/configJs.html" target="_blank" rel="noopener noreferrer">立即前往<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>我们在<code>views</code>目录下新建一个 <code>first.md</code> 文件，这个前面的内容相当于是文章的信息描述，具体的可描述信息<a href="https://vuepress-theme-reco.recoluan.com/views/1.x/frontMatter.html" target="_blank" rel="noopener noreferrer">立即前往<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <div class="language-markdown line-numbers-mode"><pre class="language-markdown"><code><span class="token front-matter-block"><span class="token punctuation">---</span>
+<span class="token font-matter yaml language-yaml">title: 这是我的第一个文章
+date: 2020-05-15
+sidebar: 'auto'
+categories:
+ - 博文
+tags:
+ - 日常</span>
+<span class="token punctuation">---</span></span>
+
+<span class="token title important"><span class="token punctuation">##</span> 这是我的第一篇文章</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>然后使用 <code>npm run dev</code>将项目运行起来</p> <p><img src="https://img.lookroot.cn/blog/202005/15/155301-943462.png" alt="image-20200515155259478"></p> <h3 id="也可以给文章添加摘要"><a href="#也可以给文章添加摘要" class="header-anchor">#</a> 也可以给文章添加摘要</h3> <div class="language-markdown line-numbers-mode"><pre class="language-markdown"><code><span class="token front-matter-block"><span class="token punctuation">---</span>
+<span class="token font-matter yaml language-yaml">title: 这是我的第一个文章
+date: 2020-05-15
+sidebar: 'auto'
+categories:
+ - 博文
+tags:
+ - 日常</span>
+<span class="token punctuation">---</span></span>
+
+::: tip
+你好
+:::
+<span class="token comment">&lt;!-- more --&gt;</span>
+
+<span class="token title important"><span class="token punctuation">##</span> 这是我的第一篇文章</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><p>看看效果，当然还有其他可以自定义的地方看文档就行了</p> <h4 id=""><a href="#" class="header-anchor">#</a> <img src="https://img.lookroot.cn/blog/202005/15/162818-92262.png" alt="image-20200515162816996"></h4> <h3 id="使用插件"><a href="#使用插件" class="header-anchor">#</a> 使用插件</h3> <p>reco文档里面还有个插件市场，提供非常多的插件<a href="https://vuepress-theme-reco.recoluan.com/views/other/recommend.html" target="_blank" rel="noopener noreferrer">立即前往<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，我们举一个看板娘的例子</p> <p>安装依赖<code>npm i @vuepress-reco/vuepress-plugin-kan-ban-niang -D</code>,然后打开<code>config.js</code>配置文件</p> <p>增加一个<strong>plugins</strong>配置文件，和</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+<span class="token string">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;recodemo&quot;</span><span class="token punctuation">,</span>
+<span class="token string">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;recodemo&quot;</span><span class="token punctuation">,</span>
+<span class="token string">&quot;dest&quot;</span><span class="token operator">:</span> <span class="token string">&quot;public&quot;</span><span class="token punctuation">,</span>
+ <span class="token operator">...</span> <span class="token operator">...</span>
+<span class="token string">&quot;plugins&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">[</span>
+    <span class="token string">&quot;@vuepress-reco/vuepress-plugin-kan-ban-niang&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      theme<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;blackCat&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      clean<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      messages<span class="token operator">:</span> <span class="token punctuation">{</span>
+        welcome<span class="token operator">:</span> <span class="token string">'我是lookroot欢迎你的关注 '</span><span class="token punctuation">,</span>
+        home<span class="token operator">:</span> <span class="token string">'心里的花，我想要带你回家。'</span><span class="token punctuation">,</span>
+        theme<span class="token operator">:</span> <span class="token string">'好吧，希望你能喜欢我的其他小伙伴。'</span><span class="token punctuation">,</span>
+        close<span class="token operator">:</span> <span class="token string">'再见哦'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><p>重启项目可以看到效果</p> <p><img src="https://img.lookroot.cn/blog/202005/15/184755-488516.png" alt="image-20200515184753310"></p> <h2 id="原生构建"><a href="#原生构建" class="header-anchor">#</a> 原生构建</h2> <p>全局安装<code>npm install -g vuepress</code></p> <p>我们新建一个文件夹 <strong>proto</strong>然后在文件夹新建一个<strong>readme.md</strong>文件，随便写点内容,<strong>vuepress</strong>默认首页为 <strong>readme.md</strong> 文件</p> <div class="language-markdown line-numbers-mode"><pre class="language-markdown"><code><span class="token title important"><span class="token punctuation">##</span> 这是我的第一篇文章</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>然后在当前目录执行控制台命令<code>vuepress dev</code>，查看效果，这个就非常的简陋了，想要成一个博客还需要一些配置</p> <p><img src="https://img.lookroot.cn/blog/202005/15/183649-953392.png" alt="image-20200515183647805"></p> <p>我们新建一个项目文件夹 <strong>protoblog</strong>，使用 <code>npm init</code>初始化项目，修改<code>package.json</code>增加打包命令</p> <div class="language-json line-numbers-mode"><pre class="language-json"><code> <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+   <span class="token property">&quot;test&quot;</span><span class="token operator">:</span> <span class="token string">&quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;</span><span class="token punctuation">,</span>
+   <span class="token property">&quot;dev&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress dev docs&quot;</span><span class="token punctuation">,</span>
+   <span class="token property">&quot;build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress build docs&quot;</span>
+ <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>然后创建一些文件和文件夹，结构如下</p> <p><img src="https://img.lookroot.cn/blog/202005/15/205609-239671.png" alt="image-20200515205608674"></p> <p>修改根目录的 <strong>README.md</strong></p> <div class="language-markdown line-numbers-mode"><pre class="language-markdown"><code><span class="token front-matter-block"><span class="token punctuation">---</span>
+<span class="token font-matter yaml language-yaml">home: true
+heroImage: /hero.png
+heroImageStyle: {
+  maxWidth: '600px',
+  width: '100%',
+  display: block,
+  margin: '9rem auto 2rem',
+  background: '#fff',
+  borderRadius: '1rem',
+}
+bgImageStyle: {
+  height: '450px'
+}
+isShowTitleInHome: false
+actionText: 立即开始
+actionLink: /views/
+features:
+- title: Yesterday
+  details: 开发一款看着开心、写着顺手的 vuepress 博客主题
+- title: Today
+  details: 希望帮助更多的人花更多的时间在内容创作上，而不是博客搭建上
+- title: Tomorrow
+  details: 希望更多的爱好者能够参与进来，帮助这个主题更好的成长</span>
+<span class="token punctuation">---</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><p>然后我们把上面 <strong>reco</strong>主题项目 <strong>public</strong>文件夹里面的静态资源复制到本项目的<strong>public</strong>目录</p> <p>然后我们修改一下 <strong>config.js</strong> 文件</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token string">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;recodemo&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;recodemo&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;dest&quot;</span><span class="token operator">:</span> <span class="token string">&quot;public&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;head&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span>
+      <span class="token string">&quot;link&quot;</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token string">&quot;rel&quot;</span><span class="token operator">:</span> <span class="token string">&quot;icon&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;href&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/favicon.ico&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span>
+      <span class="token string">&quot;meta&quot;</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;viewport&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;content&quot;</span><span class="token operator">:</span> <span class="token string">&quot;width=device-width,initial-scale=1,user-scalable=no&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token comment">// 导航栏</span>
+  <span class="token string">&quot;themeConfig&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;nav&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        <span class="token string">&quot;text&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Home&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;link&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;icon&quot;</span><span class="token operator">:</span> <span class="token string">&quot;reco-home&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token string">&quot;text&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Contact&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;icon&quot;</span><span class="token operator">:</span> <span class="token string">&quot;reco-message&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;items&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            <span class="token string">&quot;text&quot;</span><span class="token operator">:</span> <span class="token string">&quot;GitHub&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;link&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://github.com/lookroot&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;icon&quot;</span><span class="token operator">:</span> <span class="token string">&quot;reco-github&quot;</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;logo&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/logo.png&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;search&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;searchMaxSuggestions&quot;</span><span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;markdown&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;lineNumbers&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br></div></div><p>现在我们使用命令 <code>npm run dev</code>运行项目</p> <p><img src="https://img.lookroot.cn/blog/202005/15/210047-882099.png" alt="image-20200515210047264"></p> <h3 id="手动侧边栏"><a href="#手动侧边栏" class="header-anchor">#</a> 手动侧边栏</h3> <p>在具体的页面里面<strong>vuepress</strong>会默认根据你的标题生成侧边栏目录，但是在一个汇总的文档页面你想让侧边栏显示你的所有页面的标题，就可以手动配置侧边栏</p> <p>我们在<strong>views</strong>目录下创建点文章，随便写点内容</p> <p><img src="https://img.lookroot.cn/blog/202005/15/210411-155149.png" alt="image-20200515210410648"></p> <p>然后我们打开 <strong>config.js</strong> 文件，在<strong>themeConfig</strong>里面增加<strong>sidebar</strong>配置，<strong>children</strong>就是需要侧边栏显示的文件</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token string">&quot;sidebar&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token string">'/views/'</span><span class="token operator">:</span><span class="token punctuation">[</span>
+    <span class="token string">''</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      title<span class="token operator">:</span> <span class="token string">'vue教程'</span><span class="token punctuation">,</span>
+      collapsable<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 不可折叠</span>
+      children<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'vue/vif'</span><span class="token punctuation">,</span><span class="token string">'vue/vfor'</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>重新运行项目看下效果，同样的你在诸如以上<strong>reco</strong>的主题都可以这样使用，因为这是<strong>vuepress</strong>本身的配置</p> <p><img src="https://img.lookroot.cn/blog/202005/15/211213-485157.gif" alt="1"></p> <h3 id="自动侧边栏插件"><a href="#自动侧边栏插件" class="header-anchor">#</a> 自动侧边栏插件</h3> <p>上面这种大家可能觉得麻烦，上一个自动生成的插件<a href="https://github.com/shanyuhai123/vuepress-plugin-auto-sidebar" target="_blank" rel="noopener noreferrer">vuepress-plugin-auto-sidebar <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>安装<code>npm i vuepress-plugin-auto-sidebar -D</code>,然后修改<strong>config.js</strong>配置先注释掉上面的手动侧边栏配置，然后新增插件配置</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token string">&quot;plugins&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token string">&quot;vuepress-plugin-auto-sidebar&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>还需要在<strong>vue</strong> 这个文件夹新建一个<strong>readme.md</strong>随便写点内容，重新运行项目，注意当前地址后面需要加上/vue</p> <p>http://localhost:8080/views/vue/</p> <p><img src="https://img.lookroot.cn/blog/202005/15/213614-246787.png" alt="image-20200515213613592"></p> <h2 id="部署"><a href="#部署" class="header-anchor">#</a> 部署</h2> <p>部署到个人服务器就简单了，<strong>build</strong>之后<strong>nginx</strong>随便开一个服务就行</p> <p>本次主要讲的是部署到<strong>GitHub</strong>提供的<strong>GitPage</strong>,首先创建 一个仓库，如果你的仓库名为 <strong>用户名.github.io</strong>你就不用再vuepress中做任何修改，如果不为这个名称，你就需要在<strong>config.js</strong>中配置 <strong>base</strong>属性为你的仓库名</p> <p><img src="https://img.lookroot.cn/blog/202005/16/092201-510364.png" alt="image-20200516092201133"></p> <p>创建完成后，将项目克隆到本地，将刚刚写的代码复制过来，这里有个问题，如果你想部署博客的同时也将博客代码同步到<strong>git</strong>的话，可以通过新建一个分支或者专门存放代码的仓库</p> <p>编写**.gitignore**文件</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>node_modules/
+docs/.vuepress/theme
+package-lock.json
+public/
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>新建两个脚本，一个用来<strong>push</strong>博客页面，一个用来<strong>push</strong>博客源码</p> <p><strong>deploy.sh</strong>用来打包博客，并将打包完成的页面文件推送到我们的仓库</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token function">npm</span> run build
+
+<span class="token builtin class-name">cd</span> public
+
+<span class="token function">git</span> init
+<span class="token function">git</span> <span class="token function">add</span> -A
+<span class="token function">git</span> commit -m <span class="token string">'deploy'</span>
+
+<span class="token function">git</span> push -f git@github.com:lookroot/lookroot.github.io.git master
+
+<span class="token builtin class-name">cd</span> <span class="token punctuation">..</span>/
+<span class="token function">rm</span> -rf public
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p><strong>push.sh</strong>用来推送博客源码文件</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
+<span class="token function">git</span> commit -m <span class="token string">'push'</span>
+<span class="token function">git</span> push origin blogcode
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>双击运行 <strong>deploy.sh</strong>以后，我们打开https://lookroot.github.io页面便可看到效果</p> <p><img src="https://img.lookroot.cn/blog/202005/16/093550-544210.png" alt="image-20200516093549899"></p></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">2022/6/26 18:51:57</span></div></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/blogs/vue/2021/vuetailwindcss.html">
+            vue2.6.1安装tailwindcss
+          </a></span></p></div> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-70334359><li class="level-2" data-v-70334359><a href="/blogs/vue/2021/vuepress.html#reco主题" class="sidebar-link reco-side-reco主题" data-v-70334359>reco主题</a></li><li class="level-3" data-v-70334359><a href="/blogs/vue/2021/vuepress.html#快速开始" class="sidebar-link reco-side-快速开始" data-v-70334359>快速开始</a></li><li class="level-3" data-v-70334359><a href="/blogs/vue/2021/vuepress.html#实践一下" class="sidebar-link reco-side-实践一下" data-v-70334359>实践一下</a></li><li class="level-3" data-v-70334359><a href="/blogs/vue/2021/vuepress.html#也可以给文章添加摘要" class="sidebar-link reco-side-也可以给文章添加摘要" data-v-70334359>也可以给文章添加摘要</a></li><li class="level-3" data-v-70334359><a href="/blogs/vue/2021/vuepress.html#使用插件" class="sidebar-link reco-side-使用插件" data-v-70334359>使用插件</a></li><li class="level-2" data-v-70334359><a href="/blogs/vue/2021/vuepress.html#原生构建" class="sidebar-link reco-side-原生构建" data-v-70334359>原生构建</a></li><li class="level-3" data-v-70334359><a href="/blogs/vue/2021/vuepress.html#手动侧边栏" class="sidebar-link reco-side-手动侧边栏" data-v-70334359>手动侧边栏</a></li><li class="level-3" data-v-70334359><a href="/blogs/vue/2021/vuepress.html#自动侧边栏插件" class="sidebar-link reco-side-自动侧边栏插件" data-v-70334359>自动侧边栏插件</a></li><li class="level-2" data-v-70334359><a href="/blogs/vue/2021/vuepress.html#部署" class="sidebar-link reco-side-部署" data-v-70334359>部署</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-5775ee02>
+      我是lookroot欢迎你的关注 
+    </div> <div class="operation" style="right:90px;bottom:40px;display:none;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:none;" data-v-5775ee02></i></div> <canvas id="banniang" width="150" height="220" class="live2d" style="right:6vw;bottom:1vh;opacity:0.9;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div><div class="reco-bgm-panel" data-v-b1d3339e><audio id="bgm" src="/bgm/你可别卷了.m4a" data-v-b1d3339e></audio> <div class="reco-float-box" style="bottom:200px;z-index:999999;display:none;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><img src="http://p2.music.126.net/pSyOMdsBZPxgrTIu5JwgLA==/109951167026011073.jpg?param=130y130" data-v-b1d3339e></div> <div class="reco-bgm-box" style="left:10px;bottom:10px;z-index:999999;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="reco-bgm-cover" style="background-image:url(http://p2.music.126.net/pSyOMdsBZPxgrTIu5JwgLA==/109951167026011073.jpg?param=130y130);" data-v-b1d3339e><div class="mini-operation" style="display:none;" data-v-b1d3339e><i class="reco-bgm reco-bgm-pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play" style="display:none;" data-v-b1d3339e></i></div> <div class="falut-message" style="display:none;" data-v-b1d3339e>
+          播放失败
+        </div></div> <div class="reco-bgm-info" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-music music" data-v-b1d3339e></i>你可别卷了</div> <div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-artist" data-v-b1d3339e></i>SipSu小口酥 / 灯灯灯泡 / 迟亦骁</div> <div class="reco-bgm-progress" data-v-b1d3339e><div class="progress-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div> <div class="reco-bgm-operation" data-v-b1d3339e><i class="reco-bgm reco-bgm-last last" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-pause pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play play" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-next next" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-volume1 volume" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-mute mute" style="display:none;" data-v-b1d3339e></i> <div class="volume-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div></div> <div class="reco-bgm-left-box" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><i class="reco-bgm reco-bgm-left" data-v-b1d3339e></i></div></div></div><canvas id="vuepress-canvas-cursor"></canvas><canvas id="vuepress-canvas-ribbon"></canvas></div></div>
+    <script src="/assets/js/app.3ff6674a.js" defer></script><script src="/assets/js/3.fb157255.js" defer></script><script src="/assets/js/1.a81a99ec.js" defer></script><script src="/assets/js/28.86fd88a9.js" defer></script>
+  </body>
+</html>

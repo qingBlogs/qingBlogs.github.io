@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>yarn的安装和使用</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/avatar.jpg">
+    <link rel="stylesheet" href="/css/style.css">
+    <script charset="utf-8" src="/js/main.js"></script>
+    <meta name="description" content=" ">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.1df12b1e.css" as="style"><link rel="preload" href="/assets/js/app.3ff6674a.js" as="script"><link rel="preload" href="/assets/js/3.fb157255.js" as="script"><link rel="preload" href="/assets/js/1.a81a99ec.js" as="script"><link rel="preload" href="/assets/js/31.efa93e5b.js" as="script"><link rel="prefetch" href="/assets/js/10.de054c2d.js"><link rel="prefetch" href="/assets/js/11.9725be6d.js"><link rel="prefetch" href="/assets/js/12.58f91f83.js"><link rel="prefetch" href="/assets/js/13.371e93b3.js"><link rel="prefetch" href="/assets/js/14.b5517161.js"><link rel="prefetch" href="/assets/js/15.05d12a84.js"><link rel="prefetch" href="/assets/js/16.7d5b3e94.js"><link rel="prefetch" href="/assets/js/17.a78c4fea.js"><link rel="prefetch" href="/assets/js/18.9dcc79cc.js"><link rel="prefetch" href="/assets/js/19.a18e66db.js"><link rel="prefetch" href="/assets/js/20.bcef70e0.js"><link rel="prefetch" href="/assets/js/21.3fbd0ece.js"><link rel="prefetch" href="/assets/js/22.e7d4c368.js"><link rel="prefetch" href="/assets/js/23.7a2dce09.js"><link rel="prefetch" href="/assets/js/24.daee911b.js"><link rel="prefetch" href="/assets/js/25.53acc546.js"><link rel="prefetch" href="/assets/js/26.a525c3cb.js"><link rel="prefetch" href="/assets/js/27.67d5bb54.js"><link rel="prefetch" href="/assets/js/28.86fd88a9.js"><link rel="prefetch" href="/assets/js/29.762a3314.js"><link rel="prefetch" href="/assets/js/30.d2488690.js"><link rel="prefetch" href="/assets/js/4.d4395a41.js"><link rel="prefetch" href="/assets/js/5.dcf7c645.js"><link rel="prefetch" href="/assets/js/6.c7819f09.js"><link rel="prefetch" href="/assets/js/7.6c0db3bc.js"><link rel="prefetch" href="/assets/js/8.ab69b5e8.js"><link rel="prefetch" href="/assets/js/9.991c5b39.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1df12b1e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-1156296a><div data-v-1156296a><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-1156296a data-v-1156296a><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-4e82dffc data-v-1156296a data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc></h3> <p class="description" data-v-4e82dffc data-v-4e82dffc> </p> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>阿张blog</span>
+            
+          <span data-v-4e82dffc>2021 - </span>
+          2023
+        </a></span></div></div> <div class="hide" data-v-1156296a><header class="navbar" data-v-1156296a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/avatar.jpg" alt="" class="logo"> <!----></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/axios/" class="nav-link"><i class="undefined"></i>
+  axios
+</a></li><li class="dropdown-item"><!----> <a href="/categories/git/" class="nav-link"><i class="undefined"></i>
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/categories/其它/" class="nav-link"><i class="undefined"></i>
+  其它
+</a></li><li class="dropdown-item"><!----> <a href="/categories/测试/" class="nav-link"><i class="undefined"></i>
+  测试
+</a></li><li class="dropdown-item"><!----> <a href="/categories/threejs/" class="nav-link"><i class="undefined"></i>
+  threejs
+</a></li><li class="dropdown-item"><!----> <a href="/categories/ts/" class="nav-link"><i class="undefined"></i>
+  ts
+</a></li><li class="dropdown-item"><!----> <a href="/categories/vue/" class="nav-link"><i class="undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/categories/webpack/" class="nav-link"><i class="undefined"></i>
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/categories/yarn/" class="nav-link"><i class="undefined"></i>
+  yarn
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-1156296a></div> <aside class="sidebar" data-v-1156296a><div class="personal-info-wrapper" data-v-828910c6 data-v-1156296a><img src="/avatar.jpg" alt="author-avatar" class="personal-img" data-v-828910c6> <h3 class="name" data-v-828910c6>
+    阿张blog
+  </h3> <div class="num" data-v-828910c6><div data-v-828910c6><h3 data-v-828910c6>21</h3> <h6 data-v-828910c6>文章</h6></div> <div data-v-828910c6><h3 data-v-828910c6>4</h3> <h6 data-v-828910c6>标签</h6></div></div> <ul class="social-links" data-v-828910c6></ul> <hr data-v-828910c6></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/axios/" class="nav-link"><i class="undefined"></i>
+  axios
+</a></li><li class="dropdown-item"><!----> <a href="/categories/git/" class="nav-link"><i class="undefined"></i>
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/categories/其它/" class="nav-link"><i class="undefined"></i>
+  其它
+</a></li><li class="dropdown-item"><!----> <a href="/categories/测试/" class="nav-link"><i class="undefined"></i>
+  测试
+</a></li><li class="dropdown-item"><!----> <a href="/categories/threejs/" class="nav-link"><i class="undefined"></i>
+  threejs
+</a></li><li class="dropdown-item"><!----> <a href="/categories/ts/" class="nav-link"><i class="undefined"></i>
+  ts
+</a></li><li class="dropdown-item"><!----> <a href="/categories/vue/" class="nav-link"><i class="undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/categories/webpack/" class="nav-link"><i class="undefined"></i>
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/categories/yarn/" class="nav-link"><i class="undefined"></i>
+  yarn
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-4e82dffc data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>yarn的安装和使用</h3> <!----> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>阿张blog</span>
+            
+          <span data-v-4e82dffc>2021 - </span>
+          2023
+        </a></span></div></div> <div data-v-1156296a><main class="page"><section><div class="page-title"><h1 class="title">yarn的安装和使用</h1> <div data-v-1ff7123e><i class="iconfont reco-account" data-v-1ff7123e><span data-v-1ff7123e>阿张blog</span></i> <i class="iconfont reco-date" data-v-1ff7123e><span data-v-1ff7123e>2022/2/16</span></i> <!----> <i class="tags iconfont reco-tag" data-v-1ff7123e><span class="tag-item" data-v-1ff7123e>构建工具</span></i></div></div> <div class="theme-reco-content content__default"><h1 id="yarn的安装和使用"><a href="#yarn的安装和使用" class="header-anchor">#</a> yarn的安装和使用</h1> <h3 id="yarn的简介"><a href="#yarn的简介" class="header-anchor">#</a> yarn的简介：</h3> <p>Yarn是facebook发布的一款取代npm的包管理工具。</p> <h3 id="yarn的特点"><a href="#yarn的特点" class="header-anchor">#</a> yarn的特点：</h3> <p>速度超快。
+Yarn 缓存了每个下载过的包，所以再次使用时无需重复下载。 同时利用并行下载以最大化资源利用率，因此安装速度更快。
+超级安全。
+在执行代码之前，Yarn 会通过算法校验每个安装包的完整性。
+超级可靠。
+使用详细、简洁的锁文件格式和明确的安装算法，Yarn 能够保证在不同系统上无差异的工作。</p> <h3 id="yarn的安装"><a href="#yarn的安装" class="header-anchor">#</a> <strong>yarn的安装:</strong></h3> <p>下载node.js，使用npm安装</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>npm install -g yarn
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>查看版本：yarn --version
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>安装node.js,下载yarn的安装程序:
+提供一个.msi文件，在运行时将引导您在Windows上安装Yarn
+Yarn 淘宝源安装，分别复制粘贴以下代码行到黑窗口运行即可</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>yarn config set registry https://registry.npm.taobao.org -g
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>yarn config set sass_binary_site http://cdn.npm.taobao.org/dist/node-sass -g
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>yarn的常用命令：
+安装yarn</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>npm install -g yarn
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>安装成功后，查看版本号：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>yarn --version
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>创建文件夹 yarn</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>md yarn
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>进入yarn文件夹</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>cd yarn
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>初始化项目</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>yarn init // 同npm init，执行输入信息后，会生成package.json文件
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>yarn的配置项：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>yarn config list // 显示所有配置项
+yarn config get &lt;key&gt; //显示某配置项
+yarn config delete &lt;key&gt; //删除某配置项
+yarn config set &lt;key&gt; &lt;value&gt; [-g|--global] //设置配置项
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>安装包：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>yarn install //安装package.json里所有包，并将包及它的所有依赖项保存进yarn.lock
+yarn install --flat //安装一个包的单一版本
+yarn install --force //强制重新下载所有包
+yarn install --production //只安装dependencies里的包
+yarn install --no-lockfile //不读取或生成yarn.lock
+yarn install --pure-lockfile //不生成yarn.lock
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>添加包（会更新package.json和yarn.lock）：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>yarn add [package] // 在当前的项目中添加一个依赖包，会自动更新到package.json和yarn.lock文件中
+yarn add [package]@[version] // 安装指定版本，这里指的是主要版本，如果需要精确到小版本，使用-E参数
+yarn add [package]@[tag] // 安装某个tag（比如beta,next或者latest）
+//不指定依赖类型默认安装到dependencies里，你也可以指定依赖类型：
+
+yarn add --dev/-D // 加到 devDependencies
+yarn add --peer/-P // 加到 peerDependencies
+yarn add --optional/-O // 加到 optionalDependencies
+//默认安装包的主要版本里的最新版本，下面两个命令可以指定版本：
+
+yarn add --exact/-E // 安装包的精确版本。例如yarn add foo@1.2.3会接受1.9.1版，但是yarn add foo@1.2.3 --exact只会接受1.2.3版
+yarn add --tilde/-T // 安装包的次要版本里的最新版。例如yarn add foo@1.2.3 --tilde会接受1.2.9，但不接受1.3.0
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>发布包</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>yarn publish
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>移除一个包</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>yarn remove &lt;packageName&gt;：移除一个包，会自动更新package.json和yarn.lock
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>更新一个依赖</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>yarn upgrade 用于更新包到基于规范范围的最新版本
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>运行脚本</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>yarn run 用来执行在 package.json 中 scripts 属性下定义的脚本
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>显示某个包的信息</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>yarn info &lt;packageName&gt; 可以用来查看某个模块的最新版本信息
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>使用yrm工具管理一些npm源
+安装</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>yarn global add yrm
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>查看可用源</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>yrm ls
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>选择源</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>yrm use yarn
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>快速删除node_modules
+手动删除真的很慢：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>安装： npm install rimraf -g
+使用： rimraf node_modules
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>rimraf是node的一个包，可以快速删除node_modules，再也不用等半天了</p></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">2022/6/26 18:51:57</span></div></footer> <!----> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-70334359><li class="level-3" data-v-70334359><a href="/blogs/yarn/20220216.html#yarn的简介" class="sidebar-link reco-side-yarn的简介" data-v-70334359>yarn的简介：</a></li><li class="level-3" data-v-70334359><a href="/blogs/yarn/20220216.html#yarn的特点" class="sidebar-link reco-side-yarn的特点" data-v-70334359>yarn的特点：</a></li><li class="level-3" data-v-70334359><a href="/blogs/yarn/20220216.html#yarn的安装" class="sidebar-link reco-side-yarn的安装" data-v-70334359>yarn的安装:</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-5775ee02>
+      我是lookroot欢迎你的关注 
+    </div> <div class="operation" style="right:90px;bottom:40px;display:none;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:none;" data-v-5775ee02></i></div> <canvas id="banniang" width="150" height="220" class="live2d" style="right:6vw;bottom:1vh;opacity:0.9;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div><div class="reco-bgm-panel" data-v-b1d3339e><audio id="bgm" src="/bgm/你可别卷了.m4a" data-v-b1d3339e></audio> <div class="reco-float-box" style="bottom:200px;z-index:999999;display:none;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><img src="http://p2.music.126.net/pSyOMdsBZPxgrTIu5JwgLA==/109951167026011073.jpg?param=130y130" data-v-b1d3339e></div> <div class="reco-bgm-box" style="left:10px;bottom:10px;z-index:999999;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="reco-bgm-cover" style="background-image:url(http://p2.music.126.net/pSyOMdsBZPxgrTIu5JwgLA==/109951167026011073.jpg?param=130y130);" data-v-b1d3339e><div class="mini-operation" style="display:none;" data-v-b1d3339e><i class="reco-bgm reco-bgm-pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play" style="display:none;" data-v-b1d3339e></i></div> <div class="falut-message" style="display:none;" data-v-b1d3339e>
+          播放失败
+        </div></div> <div class="reco-bgm-info" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-music music" data-v-b1d3339e></i>你可别卷了</div> <div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-artist" data-v-b1d3339e></i>SipSu小口酥 / 灯灯灯泡 / 迟亦骁</div> <div class="reco-bgm-progress" data-v-b1d3339e><div class="progress-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div> <div class="reco-bgm-operation" data-v-b1d3339e><i class="reco-bgm reco-bgm-last last" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-pause pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play play" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-next next" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-volume1 volume" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-mute mute" style="display:none;" data-v-b1d3339e></i> <div class="volume-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div></div> <div class="reco-bgm-left-box" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><i class="reco-bgm reco-bgm-left" data-v-b1d3339e></i></div></div></div><canvas id="vuepress-canvas-cursor"></canvas><canvas id="vuepress-canvas-ribbon"></canvas></div></div>
+    <script src="/assets/js/app.3ff6674a.js" defer></script><script src="/assets/js/3.fb157255.js" defer></script><script src="/assets/js/1.a81a99ec.js" defer></script><script src="/assets/js/31.efa93e5b.js" defer></script>
+  </body>
+</html>

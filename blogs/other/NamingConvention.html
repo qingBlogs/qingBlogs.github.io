@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>代码规范</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/avatar.jpg">
+    <link rel="stylesheet" href="/css/style.css">
+    <script charset="utf-8" src="/js/main.js"></script>
+    <meta name="description" content=" ">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.1df12b1e.css" as="style"><link rel="preload" href="/assets/js/app.3ff6674a.js" as="script"><link rel="preload" href="/assets/js/3.fb157255.js" as="script"><link rel="preload" href="/assets/js/1.a81a99ec.js" as="script"><link rel="preload" href="/assets/js/17.a78c4fea.js" as="script"><link rel="prefetch" href="/assets/js/10.de054c2d.js"><link rel="prefetch" href="/assets/js/11.9725be6d.js"><link rel="prefetch" href="/assets/js/12.58f91f83.js"><link rel="prefetch" href="/assets/js/13.371e93b3.js"><link rel="prefetch" href="/assets/js/14.b5517161.js"><link rel="prefetch" href="/assets/js/15.05d12a84.js"><link rel="prefetch" href="/assets/js/16.7d5b3e94.js"><link rel="prefetch" href="/assets/js/18.9dcc79cc.js"><link rel="prefetch" href="/assets/js/19.a18e66db.js"><link rel="prefetch" href="/assets/js/20.bcef70e0.js"><link rel="prefetch" href="/assets/js/21.3fbd0ece.js"><link rel="prefetch" href="/assets/js/22.e7d4c368.js"><link rel="prefetch" href="/assets/js/23.7a2dce09.js"><link rel="prefetch" href="/assets/js/24.daee911b.js"><link rel="prefetch" href="/assets/js/25.53acc546.js"><link rel="prefetch" href="/assets/js/26.a525c3cb.js"><link rel="prefetch" href="/assets/js/27.67d5bb54.js"><link rel="prefetch" href="/assets/js/28.86fd88a9.js"><link rel="prefetch" href="/assets/js/29.762a3314.js"><link rel="prefetch" href="/assets/js/30.d2488690.js"><link rel="prefetch" href="/assets/js/31.efa93e5b.js"><link rel="prefetch" href="/assets/js/4.d4395a41.js"><link rel="prefetch" href="/assets/js/5.dcf7c645.js"><link rel="prefetch" href="/assets/js/6.c7819f09.js"><link rel="prefetch" href="/assets/js/7.6c0db3bc.js"><link rel="prefetch" href="/assets/js/8.ab69b5e8.js"><link rel="prefetch" href="/assets/js/9.991c5b39.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1df12b1e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-1156296a><div data-v-1156296a><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-1156296a data-v-1156296a><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-4e82dffc data-v-1156296a data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc></h3> <p class="description" data-v-4e82dffc data-v-4e82dffc> </p> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>阿张blog</span>
+            
+          <span data-v-4e82dffc>2021 - </span>
+          2023
+        </a></span></div></div> <div class="hide" data-v-1156296a><header class="navbar" data-v-1156296a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/avatar.jpg" alt="" class="logo"> <!----></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/axios/" class="nav-link"><i class="undefined"></i>
+  axios
+</a></li><li class="dropdown-item"><!----> <a href="/categories/git/" class="nav-link"><i class="undefined"></i>
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/categories/其它/" class="nav-link"><i class="undefined"></i>
+  其它
+</a></li><li class="dropdown-item"><!----> <a href="/categories/测试/" class="nav-link"><i class="undefined"></i>
+  测试
+</a></li><li class="dropdown-item"><!----> <a href="/categories/threejs/" class="nav-link"><i class="undefined"></i>
+  threejs
+</a></li><li class="dropdown-item"><!----> <a href="/categories/ts/" class="nav-link"><i class="undefined"></i>
+  ts
+</a></li><li class="dropdown-item"><!----> <a href="/categories/vue/" class="nav-link"><i class="undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/categories/webpack/" class="nav-link"><i class="undefined"></i>
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/categories/yarn/" class="nav-link"><i class="undefined"></i>
+  yarn
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-1156296a></div> <aside class="sidebar" data-v-1156296a><div class="personal-info-wrapper" data-v-828910c6 data-v-1156296a><img src="/avatar.jpg" alt="author-avatar" class="personal-img" data-v-828910c6> <h3 class="name" data-v-828910c6>
+    阿张blog
+  </h3> <div class="num" data-v-828910c6><div data-v-828910c6><h3 data-v-828910c6>21</h3> <h6 data-v-828910c6>文章</h6></div> <div data-v-828910c6><h3 data-v-828910c6>4</h3> <h6 data-v-828910c6>标签</h6></div></div> <ul class="social-links" data-v-828910c6></ul> <hr data-v-828910c6></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/axios/" class="nav-link"><i class="undefined"></i>
+  axios
+</a></li><li class="dropdown-item"><!----> <a href="/categories/git/" class="nav-link"><i class="undefined"></i>
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/categories/其它/" class="nav-link"><i class="undefined"></i>
+  其它
+</a></li><li class="dropdown-item"><!----> <a href="/categories/测试/" class="nav-link"><i class="undefined"></i>
+  测试
+</a></li><li class="dropdown-item"><!----> <a href="/categories/threejs/" class="nav-link"><i class="undefined"></i>
+  threejs
+</a></li><li class="dropdown-item"><!----> <a href="/categories/ts/" class="nav-link"><i class="undefined"></i>
+  ts
+</a></li><li class="dropdown-item"><!----> <a href="/categories/vue/" class="nav-link"><i class="undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/categories/webpack/" class="nav-link"><i class="undefined"></i>
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/categories/yarn/" class="nav-link"><i class="undefined"></i>
+  yarn
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div> <!----></nav> <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>其它</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blogs/other/NamingConvention.html" aria-current="page" class="active sidebar-link">代码规范</a></li><li><a href="/blogs/other/ThrottlingAndAnti-shaking.html" class="sidebar-link">节流防抖</a></li><li><a href="/blogs/other/video-uploader.html" class="sidebar-link">大文件切片上传</a></li><li><a href="/blogs/other/Vue3FrameworkBuilding.html" class="sidebar-link">Vue3项目团队开发框架搭建</a></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-4e82dffc data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>代码规范</h3> <!----> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>阿张blog</span>
+            
+          <span data-v-4e82dffc>2021 - </span>
+          2023
+        </a></span></div></div> <div data-v-1156296a><main class="page"><section><div class="page-title"><h1 class="title">代码规范</h1> <div data-v-1ff7123e><i class="iconfont reco-account" data-v-1ff7123e><span data-v-1ff7123e>阿张blog</span></i> <i class="iconfont reco-date" data-v-1ff7123e><span data-v-1ff7123e>2023/2/2</span></i> <!----> <i class="tags iconfont reco-tag" data-v-1ff7123e><span class="tag-item" data-v-1ff7123e>前端</span></i></div></div> <div class="theme-reco-content content__default"><h1 id="_2021最新阿里代码规范-前端篇"><a href="#_2021最新阿里代码规范-前端篇" class="header-anchor">#</a> 2021最新阿里代码规范（前端篇）</h1> <p>2022-01-07 11419</p> <p><strong>简介：</strong> 2021最新阿里代码规范（前端篇）</p> <p>此规范根据阿里最新前端规范整理，如有雷同，纯属巧合。</p> <h3 id="目录"><a href="#目录" class="header-anchor">#</a> 目录</h3> <p>前端代码规范</p> <p>一．编程规约</p> <p>(一) 命名规范</p> <p>1.1.1 项目命名</p> <p>1.1.2 目录命名</p> <p>1.1.3 JS、CSS、SCSS、HTML、PNG 文件命名</p> <p>1.1.4 命名严谨性</p> <p>(二) HTML 规范 （Vue Template 同样适用）</p> <p>1.2.1 HTML 类型</p> <p>1.2.2 缩进</p> <p>1.2.3 分块注释</p> <p>1.2.4 语义化标签</p> <p>1.2.5 引号</p> <p>(三) CSS 规范</p> <p>1.3.1 命名</p> <p>1.3.2 选择器</p> <p>\1) css 选择器中避免使用标签名</p> <p>\2) 使用直接子选择器</p> <p>1.3.3 尽量使用缩写属性</p> <p>1.3.4 每个选择器及属性独占一行</p> <p>1.3.5 省略 0 后面的单位</p> <p>1.3.6 避免使用 ID 选择器及全局标签选择器防止污染全局样式</p> <p>(四) LESS 规范</p> <p>1.4.1 代码组织</p> <p>\1) 将公共 less 文件放置在 style/less/common 文件夹</p> <p>\2) 按以下顺序组织</p> <p>1.4.2 避免嵌套层级过多</p> <p>(五) Javascript 规范</p> <p>1.5.1 命名</p> <p>\1) 采用小写驼峰命名 lowerCamelCase，代码中的命名均不能以下划线， 也不能以下划线或美元符号结束</p> <p>\2) 方法名、参数名、成员变量、局部变量都统一使用 lowerCamelCase 风 格，必须遵从驼峰形式</p> <p>\3) 常量命名全部大写，单词间用下划线隔开，力求语义表达完整清楚， 不要嫌名字长</p> <p>1.5.2 代码格式</p> <p>\1) 使用 2 个空格进行缩进</p> <p>\2) 不同逻辑、不同语义、不同业务的代码之间插入一个空行分隔开来以 提升可读性</p> <p>1.5.3 字符串</p> <p>1.5.4 对象声明</p> <p>\1) 使用字面值创建对象</p> <p>\2) 使用字面量来代替对象构造器</p> <p>1.5.5 使用 ES6+</p> <p>1.5.6 括号</p> <p>1.5.7 undefined 判断</p> <p>1.5.8 条件判断和循环最多三层</p> <p>1.5.9 this 的转换命名</p> <p>1.5.10 慎用 console.log</p> <p>二、Vue 项目规范</p> <p>(一) Vue 编码基础</p> <p>2.1.1. 组件规范</p> <p>\1) 组件名为多个单词。</p> <p>\2) 组件文件名为 pascal-case 格式</p> <p>\3) 基础组件文件名为 base 开头，使用完整单词而不是缩写。</p> <p>\4) 和父组件紧密耦合的子组件应该以父组件名作为前缀命名</p> <p>\5) 在 Template 模版中使用组件，应使用 PascalCase 模式，并且使用自闭合组件。</p> <p>\6) 组件的 data 必须是一个函数</p> <p>\7) Prop 定义应该尽量详细</p> <p>\8) 为组件样式设置作用域</p> <p>\9) 如果特性元素较多，应该主动换行。</p> <p>2.1.2. 模板中使用简单的表达式</p> <p>2.1.3 指令都使用缩写形式</p> <p>2.1.4 标签顺序保持一致</p> <p>2.1.5 必须为 v-for 设置键值 key</p> <p>2.1.6 v-show 与 v-if 选择</p> <p>2.1.7 script 标签内部结构顺序</p> <p>2.1.8 Vue Router 规范</p> <p>\1) 页面跳转数据传递使用路由参数</p> <p>\2) 使用路由懒加载（延迟加载）机制</p> <p>\3) router 中的命名规范</p> <p>\4) router 中的 path 命名规范</p> <p>(二) Vue 项目目录规范</p> <p>2.2.1 基础</p> <p>2.2.2 使用 Vue-cli 脚手架</p> <p>2.2.3 目录说明</p> <p>\1) api 目录</p> <p>\2) assets 目录</p> <p>\3) components 目录</p> <p>\4) constants 目录</p> <p>\5) router 与 store 目录</p> <p>\6) views 目录</p> <p>2.2.4 注释说明</p> <p>2.2.5 其他</p> <p>\1) 尽量不要手动操作 DOM</p> <p>\2) 删除无用代码</p> <h2 id="前端代码规范"><a href="#前端代码规范" class="header-anchor">#</a> 前端代码规范</h2> <p><img src="https://ucc.alicdn.com/pic/developer-ecology/a99077e85e2b4c8fa1b862377f741483.png" alt="image.png"></p> <h2 id="一-编程规约"><a href="#一-编程规约" class="header-anchor">#</a> 一．编程规约</h2> <h3 id="一-命名规范"><a href="#一-命名规范" class="header-anchor">#</a> (一) 命名规范</h3> <h4 id="_1-1-1-项目命名"><a href="#_1-1-1-项目命名" class="header-anchor">#</a> 1.1.1 项目命名</h4> <p>全部采用小写方式，以中线分隔。</p> <p><img src="https://ucc.alicdn.com/pic/developer-ecology/e15ba25f41fa4c21abb0350ef8ee62c3.png" alt="image.png"></p> <h4 id="_1-1-2-目录命名"><a href="#_1-1-2-目录命名" class="header-anchor">#</a> 1.1.2 目录命名</h4> <p>全部采用小写方式， 以中划线分隔，有复数结构时，要采用复数命名法， 缩写不用复数。</p> <p><img src="https://ucc.alicdn.com/pic/developer-ecology/684d8c3e4c1c4fff90c7d323596eb48b.png" alt="image.png"></p> <p><strong><img src="https://ucc.alicdn.com/pic/developer-ecology/58e94e262dde46709709c22f9277d505.png" alt="image.png"></strong></p> <h4 id="_1-1-3-js、css、scss、html、png-文件命名"><a href="#_1-1-3-js、css、scss、html、png-文件命名" class="header-anchor">#</a> 1.1.3 JS、CSS、SCSS、HTML、PNG 文件命名</h4> <p>全部采用小写方式， 以中划线分隔。</p> <p><img src="https://ucc.alicdn.com/pic/developer-ecology/f420d3eefed44f24aea5bcdcb2cf7ceb.png" alt="image.png"></p> <h4 id="_1-1-4-命名严谨性"><a href="#_1-1-4-命名严谨性" class="header-anchor">#</a> 1.1.4 命名严谨性</h4> <p>代码中的命名严禁使用拼音与英文混合的方式，更不允许直接使用中文的方式。 说明：正确的 英文拼写和语法可以让阅读者易于理解，避免歧义。注意，即使纯拼音命名方式也要避免采用</p> <p><img src="https://ucc.alicdn.com/pic/developer-ecology/db7a4f6ca20b422b84e9320b4baebd83.png" alt="image.png"></p> <p>杜绝完全不规范的缩写，避免望文不知义：</p> <p><img src="https://ucc.alicdn.com/pic/developer-ecology/e8134fcc60ca48d59e8ebec070dbc180.png" alt="image.png"></p> <h3 id="二-html-规范-vue-template-同样适用"><a href="#二-html-规范-vue-template-同样适用" class="header-anchor">#</a> (二) HTML 规范 （Vue Template 同样适用）</h3> <h4 id="_1-2-1-html-类型"><a href="#_1-2-1-html-类型" class="header-anchor">#</a> 1.2.1 HTML 类型</h4> <p>推荐使用 HTML5 的文档类型申明：</p> <p><img src="https://ucc.alicdn.com/pic/developer-ecology/a5377e8cdf384812867f0961b424979e.png" alt="image.png"></p> <p><strong>正例：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt; 
+      &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=Edge&quot; /&gt; 
+    &lt;meta charset=&quot;UTF-8&quot; /&gt; 
+    &lt;title&gt;Page title&lt;/title&gt; 
+  &lt;/head&gt;
+  &lt;body&gt; 
+   &lt;img src=&quot;images/company-logo.png&quot; alt=&quot;Company&quot;&gt;
+ &lt;/body&gt; 
+  &lt;/html&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h4 id="_1-2-2-缩进"><a href="#_1-2-2-缩进" class="header-anchor">#</a> 1.2.2 缩进</h4> <p>缩进使用 2 个空格（一个 tab）；</p> <p>嵌套的节点应该缩进。</p> <h4 id="_1-2-3-分块注释"><a href="#_1-2-3-分块注释" class="header-anchor">#</a> 1.2.3 分块注释</h4> <p>在每一个块状元素，列表元素和表格元素后，加上一对 HTML 注释。</p> <h4 id="_1-2-4-语义化标签"><a href="#_1-2-4-语义化标签" class="header-anchor">#</a> 1.2.4 语义化标签</h4> <p>HTML5 中新增很多语义化标签，所以优先使用语义化标签，避免一个页面都是 div 或者 p 标 签。</p> <p><strong>正例</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;header&gt;&lt;/header&gt; 
+&lt;footer&gt;&lt;/footer&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p><strong>反例</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;div&gt; 
+  &lt;p&gt;&lt;/p&gt;
+ &lt;/div&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h4 id="_1-2-5-引号"><a href="#_1-2-5-引号" class="header-anchor">#</a> 1.2.5 引号</h4> <p>使用双引号(&quot; &quot;) 而不是单引号(’ ') 。</p> <p><img src="https://ucc.alicdn.com/pic/developer-ecology/e519cddfdce8491d89122d4a8fbf83e9.png" alt="image.png"></p> <h3 id="三-css-规范"><a href="#三-css-规范" class="header-anchor">#</a> (三) CSS 规范</h3> <h4 id="_1-3-1-命名"><a href="#_1-3-1-命名" class="header-anchor">#</a> 1.3.1 命名</h4> <p><img src="https://ucc.alicdn.com/pic/developer-ecology/ff129661d5884fb4858794c2978e7181.png" alt="image.png"></p> <p><strong>不推荐：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>.fw-800 {
+    font-weight: 800;
+  }
+  .red {
+    color: red; 
+   }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p><strong>推荐:</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>.heavy {
+   font-weight: 800;
+  }
+.important { 
+  color: red; 
+  }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h4 id="_1-3-2-选择器"><a href="#_1-3-2-选择器" class="header-anchor">#</a> 1.3.2 选择器</h4> <h5 id="_1-css-选择器中避免使用标签名"><a href="#_1-css-选择器中避免使用标签名" class="header-anchor">#</a> 1) css 选择器中避免使用标签名</h5> <p><img src="https://ucc.alicdn.com/pic/developer-ecology/84bbff5cd7f04fdb8a642b3180e74252.png" alt="image.png"></p> <h5 id="_2-使用直接子选择器"><a href="#_2-使用直接子选择器" class="header-anchor">#</a> 2) 使用直接子选择器</h5> <p><img src="https://ucc.alicdn.com/pic/developer-ecology/6f5f611705e74aa9bb52b190515d0273.png" alt="image.png"></p> <p><strong>不推荐:</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>.content .title {
+   font-size: 2rem;
+  }
+ 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><strong>推荐:</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>.content &gt; .title {
+   font-size: 2rem;
+ }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h4 id="_1-3-3-尽量使用缩写属性"><a href="#_1-3-3-尽量使用缩写属性" class="header-anchor">#</a> 1.3.3 尽量使用缩写属性</h4> <p><strong>不推荐：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>border-top-style: none; 
+font-family: palatino, georgia, serif; 
+font-size: 100%; line-height: 1.6; 
+padding-bottom: 2em; 
+padding-left: 1em;
+ padding-right: 1em; 
+ padding-top: 0;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p><strong>推荐：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>border-top: 0; 
+font: 100%/1.6 palatino, georgia, serif; 
+padding: 0 1em 2em;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h4 id="_1-3-4-每个选择器及属性独占一行"><a href="#_1-3-4-每个选择器及属性独占一行" class="header-anchor">#</a> 1.3.4 每个选择器及属性独占一行</h4> <p><strong>不推荐：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>button { 
+  width: 100px; 
+  height: 50px;
+  color: #fff;
+  background: #00a0e9;
+  }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p><strong>推荐：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>button {
+  width: 100px; height: 50px;
+  color: #fff;
+  background: #00a0e9; 
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h4 id="_1-3-5-省略-0-后面的单位"><a href="#_1-3-5-省略-0-后面的单位" class="header-anchor">#</a> 1.3.5 省略 0 后面的单位</h4> <p><strong>不推荐：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code> div {
+   padding-bottom: 0px; 
+   margin: 0em;
+ }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><strong>推荐：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>div {
+    padding-bottom: 0; 
+    margin: 0; 
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h4 id="_1-3-6-避免使用-id-选择器及全局标签选择器防止污染全局样式"><a href="#_1-3-6-避免使用-id-选择器及全局标签选择器防止污染全局样式" class="header-anchor">#</a> 1.3.6 避免使用 ID 选择器及全局标签选择器防止污染全局样式</h4> <p><strong>不推荐：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#header {
+ padding-bottom: 0px; 
+ margin: 0em;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><strong>推荐：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>.header { 
+  padding-bottom: 0px; 
+  margin: 0em; 
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="四-less-规范"><a href="#四-less-规范" class="header-anchor">#</a> (四) LESS 规范</h3> <h4 id="_1-4-1-代码组织"><a href="#_1-4-1-代码组织" class="header-anchor">#</a> 1.4.1 代码组织</h4> <h5 id="_1-将公共-less-文件放置在-style-less-common-文件夹"><a href="#_1-将公共-less-文件放置在-style-less-common-文件夹" class="header-anchor">#</a> 1) 将公共 less 文件放置在 style/less/common 文件夹</h5> <p>例: // color.less,common.less</p> <h5 id="_2-按以下顺序组织"><a href="#_2-按以下顺序组织" class="header-anchor">#</a> 2) 按以下顺序组织</h5> <p>1、@import;</p> <p>2、变量声明;</p> <p>3、样式声明;</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>@import &quot;mixins/size.less&quot;; 
+@default-text-color: #333; 
+.page {
+ width: 960px; 
+ margin: 0 auto; 
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h4 id="_1-4-2-避免嵌套层级过多"><a href="#_1-4-2-避免嵌套层级过多" class="header-anchor">#</a> 1.4.2 避免嵌套层级过多</h4> <p><img src="https://ucc.alicdn.com/pic/developer-ecology/b4df800a98d940e297a4d259953ef51c.png" alt="image.png"></p> <p><strong>不推荐：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code> .main {
+   .title { 
+      .name { 
+           color: #fff;  
+         } 
+     }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p><strong>推荐：</strong></p> <div class="language-css line-numbers-mode"><pre class="language-css"><code><span class="token selector">.main-title</span> <span class="token punctuation">{</span>
+   <span class="token selector">.name</span> <span class="token punctuation">{</span> <span class="token property">color</span><span class="token punctuation">:</span> #fff<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="五-javascript-规范"><a href="#五-javascript-规范" class="header-anchor">#</a> (五) Javascript 规范</h3> <h4 id="_1-5-1-命名"><a href="#_1-5-1-命名" class="header-anchor">#</a> 1.5.1 命名</h4> <h5 id="_1-采用小写驼峰命名-lowercamelcase-代码中的命名均不能以下划线-也不能以下划线或美元符号结束"><a href="#_1-采用小写驼峰命名-lowercamelcase-代码中的命名均不能以下划线-也不能以下划线或美元符号结束" class="header-anchor">#</a> 1) 采用小写驼峰命名 lowerCamelCase，代码中的命名均不能以下划线， 也不能以下划线或美元符号结束</h5> <p><strong>反例：</strong> <em>name / name</em> / name$</p> <h5 id="_2-方法名、参数名、成员变量、局部变量都统一使用-lowercamelcase-风-格-必须遵从驼峰形式"><a href="#_2-方法名、参数名、成员变量、局部变量都统一使用-lowercamelcase-风-格-必须遵从驼峰形式" class="header-anchor">#</a> 2) 方法名、参数名、成员变量、局部变量都统一使用 lowerCamelCase 风 格，必须遵从驼峰形式</h5> <p><strong>正例：</strong> localValue / getHttpMessage() / inputUserId</p> <p><strong>其中 method 方法命名必须是 动词 或者 动词+名词 形式</strong></p> <p><strong>正例：</strong> saveShopCarData /openShopCarInfoDialog</p> <p><strong>反例：</strong> save / open / show / go</p> <p><strong>特此说明，增删查改，详情统一使用如下 5 个单词，不得使用其他（目的是为了统一各个端）</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>add / update / delete / detail / get 
+附： 函数方法常用的动词: 
+get 获取/set 设置, 
+add 增加/remove 删除, 
+create 创建/destory 销毁, 
+start 启动/stop 停止, 
+open 打开/close 关闭, 
+read 读取/write 写入, 
+load 载入/save 保存,
+begin 开始/end 结束, 
+backup 备份/restore 恢复,
+import 导入/export 导出, 
+split 分割/merge 合并,
+inject 注入/extract 提取,
+attach 附着/detach 脱离, 
+bind 绑定/separate 分离, 
+view 查看/browse 浏览, 
+edit 编辑/modify 修改,
+select 选取/mark 标记, 
+copy 复制/paste 粘贴,
+undo 撤销/redo 重做, 
+insert 插入/delete 移除,
+add 加入/append 添加, 
+clean 清理/clear 清除,
+index 索引/sort 排序,
+find 查找/search 搜索, 
+increase 增加/decrease 减少, 
+play 播放/pause 暂停, 
+launch 启动/run 运行, 
+compile 编译/execute 执行, 
+debug 调试/trace 跟踪, 
+observe 观察/listen 监听,
+build 构建/publish 发布,
+input 输入/output 输出,
+encode 编码/decode 解码, 
+encrypt 加密/decrypt 解密, 
+compress 压缩/decompress 解压缩, 
+pack 打包/unpack 解包,
+parse 解析/emit 生成,
+connect 连接/disconnect 断开,
+send 发送/receive 接收, 
+download 下载/upload 上传, 
+refresh 刷新/synchronize 同步,
+update 更新/revert 复原, 
+lock 锁定/unlock 解锁, 
+check out 签出/check in 签入, 
+submit 提交/commit 交付, 
+push 推/pull 拉,
+expand 展开/collapse 折叠, 
+enter 进入/exit 退出,
+abort 放弃/quit 离开, 
+obsolete 废弃/depreciate 废旧, 
+collect 收集/aggregate 聚集
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br></div></div><h5 id="_3-常量命名全部大写-单词间用下划线隔开-力求语义表达完整清楚-不要嫌名字长"><a href="#_3-常量命名全部大写-单词间用下划线隔开-力求语义表达完整清楚-不要嫌名字长" class="header-anchor">#</a> 3) 常量命名全部大写，单词间用下划线隔开，力求语义表达完整清楚， 不要嫌名字长</h5> <p><strong>正例：</strong> MAX_STOCK_COUNT</p> <p><strong>反例：</strong> MAX_COUNT</p> <h4 id="_1-5-2-代码格式"><a href="#_1-5-2-代码格式" class="header-anchor">#</a> 1.5.2 代码格式</h4> <h5 id="_1-使用-2-个空格进行缩进"><a href="#_1-使用-2-个空格进行缩进" class="header-anchor">#</a> 1) 使用 2 个空格进行缩进</h5> <p><strong>正例：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>if (x &lt; y) {
+ x += 10;
+  } else {
+   x += 1; 
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h5 id="_2-不同逻辑、不同语义、不同业务的代码之间插入一个空行分隔开来以-提升可读性"><a href="#_2-不同逻辑、不同语义、不同业务的代码之间插入一个空行分隔开来以-提升可读性" class="header-anchor">#</a> 2) 不同逻辑、不同语义、不同业务的代码之间插入一个空行分隔开来以 提升可读性</h5> <p>说明：任何情形，没有必要插入多个空行进行隔开。</p> <h4 id="_1-5-3-字符串"><a href="#_1-5-3-字符串" class="header-anchor">#</a> 1.5.3 字符串</h4> <p>统一使用单引号(‘)，不使用双引号(“)。这在创建 HTML 字符串非常有好处：</p> <p><strong>正例:</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>   let str = 'foo';
+   let testDiv = '&lt;div id=&quot;test&quot;&gt;&lt;/div&gt;'; 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p><strong>反例：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>let str = 'foo'; 
+let testDiv = &quot;&lt;div id='test'&gt;&lt;/div&gt;&quot;;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h4 id="_1-5-4-对象声明"><a href="#_1-5-4-对象声明" class="header-anchor">#</a> 1.5.4 对象声明</h4> <h5 id="_1-使用字面值创建对象"><a href="#_1-使用字面值创建对象" class="header-anchor">#</a> 1) 使用字面值创建对象</h5> <p><strong>正例：</strong> <code>let user = {};</code></p> <p><strong>反例：</strong> <code>let user = new Object();</code></p> <h5 id="_2-使用字面量来代替对象构造器"><a href="#_2-使用字面量来代替对象构造器" class="header-anchor">#</a> 2) 使用字面量来代替对象构造器</h5> <p><strong>正例：</strong> <code>var user = { age: 0, name: 1, city: 3 };</code></p> <p><strong>反例：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var user = new Object(); 
+user.age = 0; 
+user.name = 0; 
+user.city = 0; 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h4 id="_1-5-5-使用-es6"><a href="#_1-5-5-使用-es6" class="header-anchor">#</a> 1.5.5 使用 ES6+</h4> <p><img src="https://ucc.alicdn.com/pic/developer-ecology/d923f075565f4c15825e408fb6a36f9c.png" alt="image.png"></p> <h4 id="_1-5-6-括号"><a href="#_1-5-6-括号" class="header-anchor">#</a> 1.5.6 括号</h4> <p><img src="https://ucc.alicdn.com/pic/developer-ecology/cb0a300103384738b882dc475e85ccf8.png" alt="image.png"></p> <p><strong>正例：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>if (condition) { 
+doSomething();
+ }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><strong>反例：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>if (condition) doSomething();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="_1-5-7-undefined-判断"><a href="#_1-5-7-undefined-判断" class="header-anchor">#</a> 1.5.7 undefined 判断</h4> <p>永远不要直接使用 undefined 进行变量判断；使用 typeof 和字符串’undefined’对变量进行判断。</p> <p><strong>正例：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code> if (typeof person === 'undefined') { ... }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><strong>反例：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>if (person === undefined) { ... }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="_1-5-8-条件判断和循环最多三层"><a href="#_1-5-8-条件判断和循环最多三层" class="header-anchor">#</a> 1.5.8 条件判断和循环最多三层</h4> <p><img src="https://ucc.alicdn.com/pic/developer-ecology/4731961cc8f749c4a17fac33d640c89f.png" alt="image.png"></p> <h4 id="_1-5-9-this-的转换命名"><a href="#_1-5-9-this-的转换命名" class="header-anchor">#</a> 1.5.9 this 的转换命名</h4> <p><img src="https://ucc.alicdn.com/pic/developer-ecology/cd606fbc19664a2abb6e0caaec076eca.png" alt="image.png"></p> <h4 id="_1-5-10-慎用-console-log"><a href="#_1-5-10-慎用-console-log" class="header-anchor">#</a> 1.5.10 慎用 console.log</h4> <p><img src="https://ucc.alicdn.com/pic/developer-ecology/962e080dddad4378a0790e649d402d72.png" alt="image.png"></p> <h2 id="二、vue-项目规范"><a href="#二、vue-项目规范" class="header-anchor">#</a> 二、Vue 项目规范</h2> <h3 id="一-vue-编码基础"><a href="#一-vue-编码基础" class="header-anchor">#</a> (一) Vue 编码基础</h3> <p>vue 项目规范以 Vue 官方规范 （<a href="https://cn.vuejs.org/v2/style-guide/%5D" target="_blank" rel="noopener noreferrer">https://cn.vuejs.org/v2/style-guide/<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>） 中的 A 规范为基础，在其上面进行项目开发，故所有代码均遵守该规范。</p> <p><em>请仔仔细细阅读 Vue 官方规范，切记，此为第一步。</em></p> <h4 id="_2-1-1-组件规范"><a href="#_2-1-1-组件规范" class="header-anchor">#</a> 2.1.1. 组件规范</h4> <h5 id="_1-组件名为多个单词。"><a href="#_1-组件名为多个单词。" class="header-anchor">#</a> 1) 组件名为多个单词。</h5> <p>组件名应该始终是多个单词组成（大于等于 2），且命名规范为KebabCase格式。</p> <p>这样做可以避免跟现有的以及未来的 HTML 元素相冲突，因为所有的 HTML 元素名称都是单个单词的。</p> <p><strong>正例：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>export default {
+  name: 'TodoItem'
+  // ...
+};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><strong>反例：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>export default {
+  name: 'Todo',
+  // ...
+}
+export default {
+  name: 'todo-item',
+  // ...
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h5 id="_2-组件文件名为-pascal-case-格式"><a href="#_2-组件文件名为-pascal-case-格式" class="header-anchor">#</a> 2) 组件文件名为 pascal-case 格式</h5> <p><strong>正例：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>components/
+|- my-component.vue
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p><strong>反例：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>components/
+|- myComponent.vue
+|- MyComponent.vue
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h5 id="_3-基础组件文件名为-base-开头-使用完整单词而不是缩写。"><a href="#_3-基础组件文件名为-base-开头-使用完整单词而不是缩写。" class="header-anchor">#</a> 3) 基础组件文件名为 base 开头，使用完整单词而不是缩写。</h5> <p><strong>正例：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>components/
+|- base-button.vue
+|- base-table.vue
+|- base-icon.vue
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><strong>反例：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>components/
+|- MyButton.vue
+|- VueTable.vue
+|- Icon.vue
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h5 id="_4-和父组件紧密耦合的子组件应该以父组件名作为前缀命名"><a href="#_4-和父组件紧密耦合的子组件应该以父组件名作为前缀命名" class="header-anchor">#</a> 4) 和父组件紧密耦合的子组件应该以父组件名作为前缀命名</h5> <p><strong>正例：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>components/
+|- todo-list.vue
+|- todo-list-item.vue
+|- todo-list-item-button.vue
+|- user-profile-options.vue （完整单词）
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><strong>反例：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>components/
+|- TodoList.vue
+|- TodoItem.vue
+|- TodoButton.vue
+|- UProfOpts.vue （使用了缩写）
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h5 id="_5-在-template-模版中使用组件-应使用-pascalcase-模式-并且使用自闭合组件。"><a href="#_5-在-template-模版中使用组件-应使用-pascalcase-模式-并且使用自闭合组件。" class="header-anchor">#</a> 5) 在 Template 模版中使用组件，应使用 PascalCase 模式，并且使用自闭合组件。</h5> <p><strong>正例：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!-- 在单文件组件、字符串模板和 JSX 中 --&gt;
+&lt;MyComponent /&gt;
+&lt;Row&gt;&lt;table :column=&quot;data&quot;/&gt;&lt;/Row&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><strong>反例：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;my-component /&gt; &lt;row&gt;&lt;table :column=&quot;data&quot;/&gt;&lt;/row&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h5 id="_6-组件的-data-必须是一个函数"><a href="#_6-组件的-data-必须是一个函数" class="header-anchor">#</a> 6) 组件的 data 必须是一个函数</h5> <p><img src="https://ucc.alicdn.com/pic/developer-ecology/09e6f44b14334fab8960361a4950c32f.png" alt="image.png"></p> <p><strong>正例：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>export default {
+  data () {
+    return {
+      name: 'jack'
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p><strong>反例：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>export default {
+  data: {
+    name: 'jack'
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h5 id="_7-prop-定义应该尽量详细"><a href="#_7-prop-定义应该尽量详细" class="header-anchor">#</a> 7) Prop 定义应该尽量详细</h5> <p>必须使用 camelCase 驼峰命名</p> <p>必须指定类型</p> <p>必须加上注释，表明其含义</p> <p>必须加上 required 或者 default，两者二选其一</p> <p>如果有业务需要，必须加上 validator 验证</p> <p><strong>正例：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code> props: {
+  // 组件状态，用于控制组件的颜色
+   status: {
+     type: String,
+     required: true,
+     validator: function (value) {
+       return [
+         'succ',
+         'info',
+         'error'
+       ].indexOf(value) !== -1
+     }
+   },
+    // 用户级别，用于显示皇冠个数
+   userLevel：{
+      type: String,
+      required: true
+   }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><h5 id="_8-为组件样式设置作用域"><a href="#_8-为组件样式设置作用域" class="header-anchor">#</a> 8) 为组件样式设置作用域</h5> <p><strong>正例：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;template&gt;
+  &lt;button class=&quot;btn btn-close&quot;&gt;X&lt;/button&gt;
+&lt;/template&gt;
+&lt;!-- 使用 `scoped` 特性 --&gt;
+&lt;style scoped&gt;
+  .btn-close {
+    background-color: red;
+  }
+&lt;/style&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p><strong>反例：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;template&gt;
+  &lt;button class=&quot;btn btn-close&quot;&gt;X&lt;/button&gt;
+&lt;/template&gt;
+&lt;!-- 没有使用 `scoped` 特性 --&gt;
+&lt;style&gt;
+  .btn-close {
+    background-color: red;
+  }
+&lt;/style&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h5 id="_9-如果特性元素较多-应该主动换行。"><a href="#_9-如果特性元素较多-应该主动换行。" class="header-anchor">#</a> 9) 如果特性元素较多，应该主动换行。</h5> <p><strong>正例：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;MyComponent foo=&quot;a&quot; bar=&quot;b&quot; baz=&quot;c&quot;
+    foo=&quot;a&quot; bar=&quot;b&quot; baz=&quot;c&quot;
+    foo=&quot;a&quot; bar=&quot;b&quot; baz=&quot;c&quot;
+ /&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><strong>反例：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;MyComponent foo=&quot;a&quot; bar=&quot;b&quot; baz=&quot;c&quot; foo=&quot;a&quot; bar=&quot;b&quot; baz=&quot;c&quot; foo=&quot;a&quot; bar=&quot;b&quot; baz=&quot;c&quot; foo=&quot;a&quot; bar=&quot;b&quot; baz=&quot;c&quot;/&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="_2-1-2-模板中使用简单的表达式"><a href="#_2-1-2-模板中使用简单的表达式" class="header-anchor">#</a> 2.1.2. 模板中使用简单的表达式</h4> <p>组件模板应该只包含简单的表达式，复杂的表达式则应该重构为计算属性或方法。复杂表达式会让你的模板变得不那么声明式。我们应该尽量描述应该出现的是什么，而非如何计算那个值。而且计算属性和方法使得代码可以重用。</p> <p>正例：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;template&gt;
+  &lt;p&gt;{{ normalizedFullName }}&lt;/p&gt;
+&lt;/template&gt;
+// 复杂表达式已经移入一个计算属性
+computed: {
+  normalizedFullName: function () {
+    return this.fullName.split(' ').map(function (word) {
+      return word[0].toUpperCase() + word.slice(1)
+    }).join(' ')
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p><strong>反例：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;template&gt;
+  &lt;p&gt;
+       {{
+          fullName.split(' ').map(function (word) {
+             return word[0].toUpperCase() + word.slice(1)
+           }).join(' ')
+        }}
+  &lt;/p&gt;
+&lt;/template&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h4 id="_2-1-3-指令都使用缩写形式"><a href="#_2-1-3-指令都使用缩写形式" class="header-anchor">#</a> 2.1.3 指令都使用缩写形式</h4> <p>指令推荐都使用缩写形式，(用 : 表示 v-bind: 、用 @ 表示 v-on: 和用 # 表示 v-slot:)</p> <p><strong>正例：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;input
+  @input=&quot;onInput&quot;
+  @focus=&quot;onFocus&quot;
+&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><strong>反例：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;input
+  v-on:input=&quot;onInput&quot;
+  @focus=&quot;onFocus&quot;
+&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h4 id="_2-1-4-标签顺序保持一致"><a href="#_2-1-4-标签顺序保持一致" class="header-anchor">#</a> 2.1.4 标签顺序保持一致</h4> <p>单文件组件应该总是让标签顺序保持为 `</p> <p><strong>正例：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;template&gt;...&lt;/template&gt;
+&lt;script&gt;...&lt;/script&gt;
+&lt;style&gt;...&lt;/style&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><strong>反例：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;template&gt;...&lt;/template&gt;
+&lt;style&gt;...&lt;/style&gt;
+&lt;script&gt;...&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h4 id="_2-1-5-必须为-v-for-设置键值-key"><a href="#_2-1-5-必须为-v-for-设置键值-key" class="header-anchor">#</a> 2.1.5 必须为 v-for 设置键值 key</h4> <h4 id="_2-1-6-v-show-与-v-if-选择"><a href="#_2-1-6-v-show-与-v-if-选择" class="header-anchor">#</a> 2.1.6 v-show 与 v-if 选择</h4> <p>如果运行时，需要非常频繁地切换，使用 v-show ；如果在运行时，条件很少改变，使用 v-if。</p> <h4 id="_2-1-7-script-标签内部结构顺序"><a href="#_2-1-7-script-标签内部结构顺序" class="header-anchor">#</a> 2.1.7 script 标签内部结构顺序</h4> <p>components &gt; props &gt; data &gt; computed &gt; watch &gt; filter &gt; 钩子函数（钩子函数按其执行顺序） &gt; methods</p> <h4 id="_2-1-8-vue-router-规范"><a href="#_2-1-8-vue-router-规范" class="header-anchor">#</a> 2.1.8 Vue Router 规范</h4> <h5 id="_1-页面跳转数据传递使用路由参数"><a href="#_1-页面跳转数据传递使用路由参数" class="header-anchor">#</a> 1) 页面跳转数据传递使用路由参数</h5> <p>页面跳转，例如 A 页面跳转到 B 页面，需要将 A 页面的数据传递到 B 页面，推荐使用 路由参数进行传参，而不是将需要传递的数据保存 vuex，然后在 B 页面取出 vuex 的数据，因为如果在 B 页面刷新会导致 vuex 数据丢失，导致 B 页面无法正常显示数据。</p> <p>正例：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>let id = ' 123';
+this.$router.push({ name: 'userCenter', query: { id: id } });
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h5 id="_2-使用路由懒加载-延迟加载-机制"><a href="#_2-使用路由懒加载-延迟加载-机制" class="header-anchor">#</a> 2) 使用路由懒加载（延迟加载）机制</h5> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+    path: '/uploadAttachment',
+    name: 'uploadAttachment',
+    meta: {
+      title: '上传附件'
+    },
+    component: () =&gt; import('@/view/components/uploadAttachment/index.vue')
+  },
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p><strong>3) router 中的命名规范</strong></p> <p>path、childrenPoints 命名规范采用kebab-case命名规范（尽量vue文件的目录结构保持一致，因为目录、文件名都是kebab-case，这样很方便找到对应的文件）</p> <p>name 命名规范采用KebabCase命名规范且和component组件名保持一致！（因为要保持keep-alive特性，keep-alive按照component的name进行缓存，所以两者必须高度保持一致）</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 动态加载
+export const reload = [
+  {
+    path: '/reload',
+    name: 'reload',
+    component: Main,
+    meta: {
+      title: '动态加载',
+      icon: 'icon iconfont'
+    },
+    children: [
+      {
+        path: '/reload/smart-reload-list',
+        name: 'SmartReloadList',
+        meta: {
+          title: 'SmartReload',
+          childrenPoints: [
+            {
+              title: '查询',
+              name: 'smart-reload-search'
+            },
+            {
+              title: '执行reload',
+              name: 'smart-reload-update'
+            },
+            {
+              title: '查看执行结果',
+              name: 'smart-reload-result'
+            }
+          ]
+        },
+        component: () =&gt;
+          import('@/views/reload/smart-reload/smart-reload-list.vue')
+      }
+    ]
+  }
+];
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br></div></div><h5 id="_4-router-中的-path-命名规范"><a href="#_4-router-中的-path-命名规范" class="header-anchor">#</a> 4) router 中的 path 命名规范</h5> <p>path除了采用kebab-case命名规范以外，必须以 / 开头，即使是children里的path也要以 / 开头。如下示例</p> <p><strong>目的：</strong></p> <p>经常有这样的场景：某个页面有问题，要立刻找到这个vue文件，如果不用以/开头，path为parent和children组成的，可能经常需要在router文件里搜索多次才能找到，而如果以/开头，则能立刻搜索到对应的组件</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+    path: '/file',
+    name: 'File',
+    component: Main,
+    meta: {
+      title: '文件服务',
+      icon: 'ios-cloud-upload'
+    },
+    children: [
+      {
+        path: '/file/file-list',
+        name: 'FileList',
+        component: () =&gt; import('@/views/file/file-list.vue')
+      },
+      {
+        path: '/file/file-add',
+        name: 'FileAdd',
+        component: () =&gt; import('@/views/file/file-add.vue')
+      },
+      {
+        path: '/file/file-update',
+        name: 'FileUpdate',
+        component: () =&gt; import('@/views/file/file-update.vue')
+      }
+    ]
+  }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><h3 id="二-vue-项目目录规范"><a href="#二-vue-项目目录规范" class="header-anchor">#</a> (二) Vue 项目目录规范</h3> <h4 id="_2-2-1-基础"><a href="#_2-2-1-基础" class="header-anchor">#</a> 2.2.1 基础</h4> <p>vue 项目中的所有命名一定要与后端命名统一。</p> <p>比如权限：后端 privilege, 前端无论 router , store, api 等都必须使用 privielege 单词！</p> <p><strong>2.2.2 使用 Vue-cli 脚手架</strong></p> <p>使用 vue-cli3 来初始化项目，项目名按照上面的命名规范。</p> <p><strong>2.2.3 目录说明</strong></p> <p>目录名按照上面的命名规范，其中 components 组件用大写驼峰，其余除 components 组件目录外的所有目录均使用 kebab-case 命名。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>src                                  源码目录
+|-- api                              所有api接口
+|-- assets                           静态资源，images, icons, styles等
+|-- components                       公用组件
+|-- config                           配置信息
+|-- constants                        常量信息，项目所有Enum, 全局常量等
+|-- directives                       自定义指令
+|-- filters                          过滤器，全局工具
+|-- datas                            模拟数据，临时存放
+|-- lib                              外部引用的插件存放及修改文件
+|-- mock                             模拟接口，临时存放
+|-- plugins                          插件，全局使用
+|-- router                           路由，统一管理
+|-- store                            vuex, 统一管理
+|-- themes                           自定义样式主题
+|-- views                            视图目录
+|   |-- role                                 role模块名
+|   |-- |-- role-list.vue                    role列表页面
+|   |-- |-- role-add.vue                     role新建页面
+|   |-- |-- role-update.vue                  role更新页面
+|   |-- |-- index.less                       role模块样式
+|   |-- |-- components                       role模块通用组件文件夹
+|   |-- employee                             employee模块
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><p>\1) api 目录</p> <p>文件、变量命名要与后端保持一致。</p> <p>此目录对应后端 API 接口，按照后端一个 controller 一个 api js 文件。若项目较大时，可以按照业务划分子目录，并与后端保持一致。</p> <p>api 中的方法名字要与后端 api url 尽量保持语义高度一致性。</p> <p>对于 api 中的每个方法要添加注释，注释与后端 swagger 文档保持一致。</p> <p><strong>正例：</strong></p> <p>后端 url： EmployeeController.java</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>/employee/add
+/employee/delete/{id}
+/employee/update
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>前端： employee.js</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>  // 添加员工
+  addEmployee: (data) =&gt; {
+    return postAxios('/employee/add', data)
+  },
+  // 更新员工信息
+  updateEmployee: (data) =&gt; {
+    return postAxios('/employee/update', data)
+  },
+    // 删除员工
+  deleteEmployee: (employeeId) =&gt; {
+    return postAxios('/employee/delete/' + employeeId)
+   },
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h5 id="_2-assets-目录"><a href="#_2-assets-目录" class="header-anchor">#</a> 2) assets 目录</h5> <p>assets 为静态资源，里面存放 images, styles, icons 等静态资源，静态资源命名格式为 kebab-case</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>|assets
+|-- icons
+|-- images
+|   |-- background-color.png
+|   |-- upload-header.png
+|-- styles
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h4 id="_3-components-目录"><a href="#_3-components-目录" class="header-anchor">#</a> 3) components 目录</h4> <p>此目录应按照组件进行目录划分，目录命名为 KebabCase，组件命名规则也为 KebabCase</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>|components
+|-- error-log
+|   |-- index.vue
+|   |-- index.less
+|-- markdown-editor
+|   |-- index.vue
+|   |-- index.js
+|-- kebab-case
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h5 id="_4-constants-目录"><a href="#_4-constants-目录" class="header-anchor">#</a> 4) constants 目录</h5> <p>此目录存放项目所有常量，如果常量在 vue 中使用，请使用 vue-enum 插件(https://www.npmjs.com/package/vue-enum)</p> <p>目录结构：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>|constants
+|-- index.js
+|-- role.js
+|-- employee.js
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>例子： employee.js</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>export const EMPLOYEE_STATUS = {
+  NORMAL: {
+    value: 1,
+    desc: '正常'
+  },
+  DISABLED: {
+    value: 1,
+    desc: '禁用'
+  },
+  DELETED: {
+    value: 2,
+    desc: '已删除'
+  }
+};
+export const EMPLOYEE_ACCOUNT_TYPE = {
+  QQ: {
+    value: 1,
+    desc: 'QQ登录'
+  },
+  WECHAT: {
+    value: 2,
+    desc: '微信登录'
+  },
+  DINGDING: {
+    value: 3,
+    desc: '钉钉登录'
+  },
+  USERNAME: {
+    value: 4,
+    desc: '用户名密码登录'
+  }
+};
+export default {
+  EMPLOYEE_STATUS,
+  EMPLOYEE_ACCOUNT_TYPE
+};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br></div></div><h4 id="_5-router-与-store-目录"><a href="#_5-router-与-store-目录" class="header-anchor">#</a> 5) router 与 store 目录</h4> <p>这两个目录一定要将业务进行拆分，不能放到一个 js 文件里。</p> <p>router 尽量按照 views 中的结构保持一致</p> <p>store 按照业务进行拆分不同的 js 文件</p> <h5 id="_6-views-目录"><a href="#_6-views-目录" class="header-anchor">#</a> 6) views 目录</h5> <p>命名要与后端、router、api 等保持一致</p> <p>components 中组件要使用 PascalCase 规则</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>|-- views                                    视图目录
+|   |-- role                                 role模块名
+|   |   |-- role-list.vue                    role列表页面
+|   |   |-- role-add.vue                     role新建页面
+|   |   |-- role-update.vue                  role更新页面
+|   |   |-- index.less                      role模块样式
+|   |   |-- components                      role模块通用组件文件夹
+|   |   |   |-- role-header.vue             role头部组件
+|   |   |   |-- role-modal.vue              role弹出框组件
+|   |-- employee                            employee模块
+|   |-- behavior-log                        行为日志log模块
+|   |-- code-generator                      代码生成器模块
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>2.2.4 注释说明</p> <p>整理必须加注释的地方</p> <p>公共组件使用说明</p> <p>api 目录的接口 js 文件必须加注释</p> <p>store 中的 state, mutation, action 等必须加注释</p> <p>vue 文件中的 template 必须加注释，若文件较大添加 start end 注释</p> <p>vue 文件的 methods，每个 method 必须添加注释</p> <p>vue 文件的 data, 非常见单词要加注释</p> <h4 id="_2-2-5-其他"><a href="#_2-2-5-其他" class="header-anchor">#</a> 2.2.5 其他</h4> <h5 id="_1-尽量不要手动操作-dom"><a href="#_1-尽量不要手动操作-dom" class="header-anchor">#</a> 1) 尽量不要手动操作 DOM</h5> <p>因使用 vue 框架，所以在项目开发中尽量使用 vue 的数据驱动更新 DOM，尽量（不到万不得已）不要手动操作 DOM，包括：增删改 dom 元素、以及更改样式、添加事件等。</p> <h5 id="_2-删除无用代码"><a href="#_2-删除无用代码" class="header-anchor">#</a> 2) 删除无用代码</h5> <p>因使用了 git/svn 等代码版本工具，对于无用代码必须及时删除，例如：一些调试的 console 语句、无用的弃用功能代码。</p></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">2023/2/2 16:27:58</span></div></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/blogs/other/ThrottlingAndAnti-shaking.html">
+            节流防抖
+          </a></span></p></div> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-70334359><li class="level-3" data-v-70334359><a href="/blogs/other/NamingConvention.html#目录" class="sidebar-link reco-side-目录" data-v-70334359>目录</a></li><li class="level-2" data-v-70334359><a href="/blogs/other/NamingConvention.html#前端代码规范" class="sidebar-link reco-side-前端代码规范" data-v-70334359>前端代码规范</a></li><li class="level-2" data-v-70334359><a href="/blogs/other/NamingConvention.html#一-编程规约" class="sidebar-link reco-side-一-编程规约" data-v-70334359>一．编程规约</a></li><li class="level-3" data-v-70334359><a href="/blogs/other/NamingConvention.html#一-命名规范" class="sidebar-link reco-side-一-命名规范" data-v-70334359>(一) 命名规范</a></li><li class="level-3" data-v-70334359><a href="/blogs/other/NamingConvention.html#二-html-规范-vue-template-同样适用" class="sidebar-link reco-side-二-html-规范-vue-template-同样适用" data-v-70334359>(二) HTML 规范 （Vue Template 同样适用）</a></li><li class="level-3" data-v-70334359><a href="/blogs/other/NamingConvention.html#三-css-规范" class="sidebar-link reco-side-三-css-规范" data-v-70334359>(三) CSS 规范</a></li><li class="level-3" data-v-70334359><a href="/blogs/other/NamingConvention.html#四-less-规范" class="sidebar-link reco-side-四-less-规范" data-v-70334359>(四) LESS 规范</a></li><li class="level-3" data-v-70334359><a href="/blogs/other/NamingConvention.html#五-javascript-规范" class="sidebar-link reco-side-五-javascript-规范" data-v-70334359>(五) Javascript 规范</a></li><li class="level-2" data-v-70334359><a href="/blogs/other/NamingConvention.html#二、vue-项目规范" class="sidebar-link reco-side-二、vue-项目规范" data-v-70334359>二、Vue 项目规范</a></li><li class="level-3" data-v-70334359><a href="/blogs/other/NamingConvention.html#一-vue-编码基础" class="sidebar-link reco-side-一-vue-编码基础" data-v-70334359>(一) Vue 编码基础</a></li><li class="level-3" data-v-70334359><a href="/blogs/other/NamingConvention.html#二-vue-项目目录规范" class="sidebar-link reco-side-二-vue-项目目录规范" data-v-70334359>(二) Vue 项目目录规范</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-5775ee02>
+      我是lookroot欢迎你的关注 
+    </div> <div class="operation" style="right:90px;bottom:40px;display:none;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:none;" data-v-5775ee02></i></div> <canvas id="banniang" width="150" height="220" class="live2d" style="right:6vw;bottom:1vh;opacity:0.9;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div><div class="reco-bgm-panel" data-v-b1d3339e><audio id="bgm" src="/bgm/你可别卷了.m4a" data-v-b1d3339e></audio> <div class="reco-float-box" style="bottom:200px;z-index:999999;display:none;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><img src="http://p2.music.126.net/pSyOMdsBZPxgrTIu5JwgLA==/109951167026011073.jpg?param=130y130" data-v-b1d3339e></div> <div class="reco-bgm-box" style="left:10px;bottom:10px;z-index:999999;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="reco-bgm-cover" style="background-image:url(http://p2.music.126.net/pSyOMdsBZPxgrTIu5JwgLA==/109951167026011073.jpg?param=130y130);" data-v-b1d3339e><div class="mini-operation" style="display:none;" data-v-b1d3339e><i class="reco-bgm reco-bgm-pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play" style="display:none;" data-v-b1d3339e></i></div> <div class="falut-message" style="display:none;" data-v-b1d3339e>
+          播放失败
+        </div></div> <div class="reco-bgm-info" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-music music" data-v-b1d3339e></i>你可别卷了</div> <div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-artist" data-v-b1d3339e></i>SipSu小口酥 / 灯灯灯泡 / 迟亦骁</div> <div class="reco-bgm-progress" data-v-b1d3339e><div class="progress-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div> <div class="reco-bgm-operation" data-v-b1d3339e><i class="reco-bgm reco-bgm-last last" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-pause pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play play" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-next next" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-volume1 volume" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-mute mute" style="display:none;" data-v-b1d3339e></i> <div class="volume-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div></div> <div class="reco-bgm-left-box" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><i class="reco-bgm reco-bgm-left" data-v-b1d3339e></i></div></div></div><canvas id="vuepress-canvas-cursor"></canvas><canvas id="vuepress-canvas-ribbon"></canvas></div></div>
+    <script src="/assets/js/app.3ff6674a.js" defer></script><script src="/assets/js/3.fb157255.js" defer></script><script src="/assets/js/1.a81a99ec.js" defer></script><script src="/assets/js/17.a78c4fea.js" defer></script>
+  </body>
+</html>

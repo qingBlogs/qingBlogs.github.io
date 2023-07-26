@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>webpack基本使用</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/avatar.jpg">
+    <link rel="stylesheet" href="/css/style.css">
+    <script charset="utf-8" src="/js/main.js"></script>
+    <meta name="description" content=" ">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.1df12b1e.css" as="style"><link rel="preload" href="/assets/js/app.3ff6674a.js" as="script"><link rel="preload" href="/assets/js/3.fb157255.js" as="script"><link rel="preload" href="/assets/js/1.a81a99ec.js" as="script"><link rel="preload" href="/assets/js/30.d2488690.js" as="script"><link rel="prefetch" href="/assets/js/10.de054c2d.js"><link rel="prefetch" href="/assets/js/11.9725be6d.js"><link rel="prefetch" href="/assets/js/12.58f91f83.js"><link rel="prefetch" href="/assets/js/13.371e93b3.js"><link rel="prefetch" href="/assets/js/14.b5517161.js"><link rel="prefetch" href="/assets/js/15.05d12a84.js"><link rel="prefetch" href="/assets/js/16.7d5b3e94.js"><link rel="prefetch" href="/assets/js/17.a78c4fea.js"><link rel="prefetch" href="/assets/js/18.9dcc79cc.js"><link rel="prefetch" href="/assets/js/19.a18e66db.js"><link rel="prefetch" href="/assets/js/20.bcef70e0.js"><link rel="prefetch" href="/assets/js/21.3fbd0ece.js"><link rel="prefetch" href="/assets/js/22.e7d4c368.js"><link rel="prefetch" href="/assets/js/23.7a2dce09.js"><link rel="prefetch" href="/assets/js/24.daee911b.js"><link rel="prefetch" href="/assets/js/25.53acc546.js"><link rel="prefetch" href="/assets/js/26.a525c3cb.js"><link rel="prefetch" href="/assets/js/27.67d5bb54.js"><link rel="prefetch" href="/assets/js/28.86fd88a9.js"><link rel="prefetch" href="/assets/js/29.762a3314.js"><link rel="prefetch" href="/assets/js/31.efa93e5b.js"><link rel="prefetch" href="/assets/js/4.d4395a41.js"><link rel="prefetch" href="/assets/js/5.dcf7c645.js"><link rel="prefetch" href="/assets/js/6.c7819f09.js"><link rel="prefetch" href="/assets/js/7.6c0db3bc.js"><link rel="prefetch" href="/assets/js/8.ab69b5e8.js"><link rel="prefetch" href="/assets/js/9.991c5b39.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1df12b1e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-1156296a><div data-v-1156296a><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-1156296a data-v-1156296a><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-4e82dffc data-v-1156296a data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc></h3> <p class="description" data-v-4e82dffc data-v-4e82dffc> </p> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>阿张blog</span>
+            
+          <span data-v-4e82dffc>2021 - </span>
+          2023
+        </a></span></div></div> <div class="hide" data-v-1156296a><header class="navbar" data-v-1156296a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/avatar.jpg" alt="" class="logo"> <!----></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/axios/" class="nav-link"><i class="undefined"></i>
+  axios
+</a></li><li class="dropdown-item"><!----> <a href="/categories/git/" class="nav-link"><i class="undefined"></i>
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/categories/其它/" class="nav-link"><i class="undefined"></i>
+  其它
+</a></li><li class="dropdown-item"><!----> <a href="/categories/测试/" class="nav-link"><i class="undefined"></i>
+  测试
+</a></li><li class="dropdown-item"><!----> <a href="/categories/threejs/" class="nav-link"><i class="undefined"></i>
+  threejs
+</a></li><li class="dropdown-item"><!----> <a href="/categories/ts/" class="nav-link"><i class="undefined"></i>
+  ts
+</a></li><li class="dropdown-item"><!----> <a href="/categories/vue/" class="nav-link"><i class="undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/categories/webpack/" class="nav-link"><i class="undefined"></i>
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/categories/yarn/" class="nav-link"><i class="undefined"></i>
+  yarn
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-1156296a></div> <aside class="sidebar" data-v-1156296a><div class="personal-info-wrapper" data-v-828910c6 data-v-1156296a><img src="/avatar.jpg" alt="author-avatar" class="personal-img" data-v-828910c6> <h3 class="name" data-v-828910c6>
+    阿张blog
+  </h3> <div class="num" data-v-828910c6><div data-v-828910c6><h3 data-v-828910c6>21</h3> <h6 data-v-828910c6>文章</h6></div> <div data-v-828910c6><h3 data-v-828910c6>4</h3> <h6 data-v-828910c6>标签</h6></div></div> <ul class="social-links" data-v-828910c6></ul> <hr data-v-828910c6></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/axios/" class="nav-link"><i class="undefined"></i>
+  axios
+</a></li><li class="dropdown-item"><!----> <a href="/categories/git/" class="nav-link"><i class="undefined"></i>
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/categories/其它/" class="nav-link"><i class="undefined"></i>
+  其它
+</a></li><li class="dropdown-item"><!----> <a href="/categories/测试/" class="nav-link"><i class="undefined"></i>
+  测试
+</a></li><li class="dropdown-item"><!----> <a href="/categories/threejs/" class="nav-link"><i class="undefined"></i>
+  threejs
+</a></li><li class="dropdown-item"><!----> <a href="/categories/ts/" class="nav-link"><i class="undefined"></i>
+  ts
+</a></li><li class="dropdown-item"><!----> <a href="/categories/vue/" class="nav-link"><i class="undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/categories/webpack/" class="nav-link"><i class="undefined"></i>
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/categories/yarn/" class="nav-link"><i class="undefined"></i>
+  yarn
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-4e82dffc data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>webpack基本使用</h3> <!----> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>阿张blog</span>
+            
+          <span data-v-4e82dffc>2021 - </span>
+          2023
+        </a></span></div></div> <div data-v-1156296a><main class="page"><section><div class="page-title"><h1 class="title">webpack基本使用</h1> <div data-v-1ff7123e><i class="iconfont reco-account" data-v-1ff7123e><span data-v-1ff7123e>阿张blog</span></i> <i class="iconfont reco-date" data-v-1ff7123e><span data-v-1ff7123e>2022/6/13</span></i> <!----> <i class="tags iconfont reco-tag" data-v-1ff7123e><span class="tag-item" data-v-1ff7123e>前端</span></i></div></div> <div class="theme-reco-content content__default"><h1 id="webpack使用"><a href="#webpack使用" class="header-anchor">#</a> webpack使用</h1> <ol><li><p>初始化工程</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>npm init -y // 初始化工程，生成package.json 文件
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li> <li><p>安装webpack</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>npm i webpack webpack-cli -D 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li></ol> <h2 id="_1-webpack-核心模块"><a href="#_1-webpack-核心模块" class="header-anchor">#</a> 1.webpack 核心模块</h2> <ul><li>entry：入口</li> <li>output：出口</li> <li>module：配置 loader 处理非js文件打包</li> <li>plugins：插件，处理任务，删除，压缩，复制等</li> <li>mode：模式，development（开发）production（生产）</li></ul> <h2 id="_2-webpack默认配置文件-webpack-config-js"><a href="#_2-webpack默认配置文件-webpack-config-js" class="header-anchor">#</a> 2.webpack默认配置文件：webpack.config.js</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> HtmlWebpackPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'html-webpack-plugin'</span><span class="token punctuation">)</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    entry<span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">'@babel/polyfill'</span><span class="token punctuation">,</span>
+        <span class="token string">'./src/index.js'</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    output<span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 打包文件名</span>
+        filename<span class="token operator">:</span> <span class="token string">'js/bundle.js'</span><span class="token punctuation">,</span>
+        <span class="token comment">// 打包后的路径，必须是绝对路径</span>
+        path<span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'dist'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// development（开发）production（生产）</span>
+    mode<span class="token operator">:</span><span class="token string">'development'</span><span class="token punctuation">,</span>
+    <span class="token comment">// webpack-dev-server配置</span>
+    devServer<span class="token operator">:</span><span class="token punctuation">{</span>
+        open<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token keyword">static</span><span class="token operator">:</span> <span class="token string">'public'</span><span class="token punctuation">,</span>
+        port<span class="token operator">:</span> <span class="token number">5000</span><span class="token punctuation">,</span>
+        hot<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        compress<span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    plugins<span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token keyword">new</span> <span class="token class-name">HtmlWebpackPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            filename<span class="token operator">:</span><span class="token string">'index.html'</span><span class="token punctuation">,</span>
+            template<span class="token operator">:</span><span class="token string">'./src/index.html'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 配置loader</span>
+    module<span class="token operator">:</span><span class="token punctuation">{</span>
+        rules<span class="token operator">:</span><span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+                test<span class="token operator">:</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.css$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+                <span class="token comment">// user 从右往左</span>
+                use<span class="token operator">:</span><span class="token punctuation">[</span><span class="token string">'style-loader'</span><span class="token punctuation">,</span><span class="token punctuation">{</span>
+                    loader<span class="token operator">:</span><span class="token string">'css-loader'</span><span class="token punctuation">,</span>
+                    options<span class="token operator">:</span><span class="token punctuation">{</span>
+                        esModule<span class="token operator">:</span><span class="token boolean">false</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                test<span class="token operator">:</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.less$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+                <span class="token comment">// user 从右往左</span>
+                use<span class="token operator">:</span><span class="token punctuation">[</span><span class="token string">'style-loader'</span><span class="token punctuation">,</span><span class="token string">'css-loader'</span><span class="token punctuation">,</span><span class="token string">'less-loader'</span><span class="token punctuation">]</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                test<span class="token operator">:</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.scss$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+                <span class="token comment">// user 从右往左</span>
+                use<span class="token operator">:</span><span class="token punctuation">[</span><span class="token string">'style-loader'</span><span class="token punctuation">,</span><span class="token string">'css-loader'</span><span class="token punctuation">,</span><span class="token string">'sass-loader'</span><span class="token punctuation">]</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                test<span class="token operator">:</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.(png|jpg)$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+                <span class="token comment">// user 从右往左</span>
+                loader<span class="token operator">:</span><span class="token string">'url-loader'</span><span class="token punctuation">,</span>
+                <span class="token comment">// 配置项</span>
+                options<span class="token operator">:</span><span class="token punctuation">{</span>
+                    esModule<span class="token operator">:</span><span class="token boolean">false</span><span class="token punctuation">,</span>
+                    <span class="token comment">// 如果大于 16kb 的图片就不处理 base64</span>
+                    limit<span class="token operator">:</span><span class="token number">16</span><span class="token operator">*</span><span class="token number">1024</span><span class="token punctuation">,</span>
+                    <span class="token comment">// 修改打包图片的名字</span>
+                    name<span class="token operator">:</span><span class="token string">'[hash:4].[ext]'</span><span class="token punctuation">,</span>
+                    <span class="token comment">// 配置图片输出路径</span>
+                    outputPath<span class="token operator">:</span><span class="token string">'imgs'</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                test<span class="token operator">:</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.html$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+                loader<span class="token operator">:</span><span class="token string">'html-loader'</span><span class="token punctuation">,</span>
+                options<span class="token operator">:</span><span class="token punctuation">{</span>
+                    esModule<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                test<span class="token operator">:</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.js$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+                loader<span class="token operator">:</span><span class="token string">'babel-loader'</span><span class="token punctuation">,</span>
+                <span class="token comment">// 除了这个文件夹之外的文件</span>
+                exclude<span class="token operator">:</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">node_modules</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+                options<span class="token operator">:</span> <span class="token punctuation">{</span>
+                    presets<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'@babel/env'</span><span class="token punctuation">]</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    devtool<span class="token operator">:</span><span class="token string">'eval-cheap-module-source-map'</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 通过 命令指定webpack配置</span>
+<span class="token comment">// webpack --config 指定配置文件名称</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br></div></div><ul><li><p>监听文件自动编译</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>watch
+// 方式一 package.json scripts下配置脚本 webpack --watch 
+// 方式二 在webpack.config.js 添加watch:true
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>// webpack-dev-server 安装
+npm i webpack-dev-server -D
+
+webpack-dev-server的其它配置
+  --open 打开默认浏览器
+  --static 指定文件夹开启服务
+  --port 指定端口
+  --compress 压缩代码
+  --hot 热更新
+1.默认将根目录下面的 public 文件夹开启服务
+	webpack-dev-server --static src // 指定src 目录开启静态服务
+2. 将打包好的文件，放在内存里面
+
+package.json scripts下配置脚本 webpack-dev-server
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div></li> <li><p>插件 html-webpack-plugin</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 1.安装
+npm i html-webpack-plugin -D
+// 2.导入 webpack.config.js
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+// 3.使用 webpack.config.js
+plugins:[
+	new HtmlWebpackPlugin({
+		filename:文件名,
+		template:模板
+	})
+]
+
+html-webpack-plugin 做了什么事情
+1·通过模板生成一个 html
+2.将 html 文件存在内存中
+3.自动打包好的js 文件引入到html中
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div></li></ul> <h2 id="_3-处理css文件"><a href="#_3-处理css文件" class="header-anchor">#</a> 3.处理css文件</h2> <ol><li>css 文件需要用到工具处理（loader）</li> <li>loader 就是将 非js 文件模块化</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>-安装
+npm i css-loader style-loader -D
+
+// css-loader: 将css 模块化
+// style-loader: 将css 通过 style 标签的形式，引入到html 里面
+1.引入css 文件需要在js 中引入
+2.js 本身具备模块化，但css没有
+3.需要使用 loader 去处理css 的模块化
+4.使用两个 loader: style-loader css-loader
+5.css-loader 是将css 文件模块化
+6.style-loader 是将css模块化后的文件引入到html里面
+-配置：webpack.config.js
+module:{
+        rules:[
+            {
+                test:/\.css$/,
+                // user 从左往右
+                use:['style-loader','css-loader']
+            } 
+        ]
+    }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><h2 id="_4-处理less文件"><a href="#_4-处理less文件" class="header-anchor">#</a> 4.处理less文件</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>1.安装 less less-loader
+npm i less less-loader -D
+
+less：解析less 语法
+less-loader：将less转成css
+
+2.配置：webpack.config.js
+module:{
+        rules:[
+            {
+                test:/\.less$/,
+                // user 从左往右
+                use:['style-loader','css-loader','less-loader']
+            }
+        ]
+    }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h2 id="_5-处理sass文件"><a href="#_5-处理sass文件" class="header-anchor">#</a> 5.处理sass文件</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>1.安装 node-sass sass-loader
+npm i node-sass sass-loader -D
+
+node-sass：解析sass 语法
+sass-loader：将sass转成css
+
+2.配置：webpack.config.js
+module:{
+        rules:[
+            {
+                test:/\.less$/,
+                // user 从左往右
+                use:['style-loader','css-loader','sass-loader']
+            }
+        ]
+    }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h2 id="_6-处理图片"><a href="#_6-处理图片" class="header-anchor">#</a> 6.处理图片</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>展示图片的三种方式
+1.使用背景图片
+2.使用js 导入
+3.img标签
+安装 file-loader url-loader
+npm i file-loader url-loader html-loader -D
+
+配置：webpack.config.js
+module:{
+        rules:[
+            {
+                test:/\.(png|jpg)$/,
+                // user 从左往右
+                loader:'url-loader',
+                // 配置项
+                options:{
+                    esModule:false,
+                    // 如果大于 16kb 的图片就不处理 base64
+                    limit:16*1024,
+                    // 修改打包图片的名字
+                    name:'[hash:4].[ext]',
+                    // 配置图片输出路径
+                    outputPath:'imgs'
+                }
+            },
+            {
+            	//加载html url图片
+                test:/\.html$/,
+                loader:'html-loader',
+                options:{
+                    esModule: false,
+                }
+            }
+        ]
+    }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br></div></div><h2 id="_7-webpack-babel配置"><a href="#_7-webpack-babel配置" class="header-anchor">#</a> 7.webpack babel配置</h2> <ul><li>babel 作用就是将高版本的js语法，转成低版本浏览器能支持的语法</li></ul> <p>安装:babel-loader @babel/core(核心代码) @babel/preset-env</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>npm i babel-loader @babel/core @babel/preset-env -D
+
+在webpack.config.js中配置
+module:{
+        rules:[
+            {
+                test:/\.js$/,
+                loader:'babel-loader',
+                // 除了这个文件夹之外的文件
+                exclude:/node_modules/,
+                options: {
+                    presets: ['@babel/env']
+                }
+            }
+        ]
+    }
+
+
+npm i @babel/polyfill -S  // 对象方法，数组方法
+方法一
+webpack.config.js中entry
+entry: [
+        '@babel/polyfill',
+        './src/index.js'
+    ],
+方法二 js文件直接引入
+import '@babel/polyfill'
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><h2 id="_8-sourcemap"><a href="#_8-sourcemap" class="header-anchor">#</a> 8.SourceMap</h2> <p>SourceMap：源码映射，将打包好的代码，通过sourceMap映射源文件所在的位置</p> <p>在webpack.config.js 文件中配置</p> <p>devtool: 值</p> <p>1.<strong><code>eval</code></strong>    ：生成后的代码 --&gt;不生成map文件</p> <p>2.<strong><code>eval-source-map</code></strong>   :源代码 --&gt;不生成map文件</p> <p>3.<strong><code>cheap-source-map</code></strong>  :生成后的代码  --&gt;生成 map 文件</p> <p>4.<strong><code>source-map</code></strong>  :源代码--&gt;生成map文件</p> <p>5.<strong><code>eval-cheap-module-source-map</code></strong>  :源代码 --&gt; 不生成 map</p> <h2 id="_9-webpack-多页面打包"><a href="#_9-webpack-多页面打包" class="header-anchor">#</a> 9.webpack 多页面打包</h2> <blockquote><p>多页面打包的核心：有多个入口，就有多个出口</p></blockquote> <p>webpack.config.js</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 多个入口，就会有多个出口
+    entry: {
+        home:'./src/js/home.js',
+        aboutMe:'./src/js/aboutMe.js',
+    },
+    output: {
+        // 打包文件名
+        filename: 'js/[name].js',
+        // 打包后的路径，必须是绝对路径
+        path: path.resolve(__dirname, 'dist')
+    },
+    plugins: [
+        // 配置home 页
+        new HtmlWebpackPlugin({
+            filename:'home.html',
+            template:'./src/pages/home.html',
+            // 每个页面只加载自己的js
+            chunks:['home']
+        }),
+        new HtmlWebpackPlugin({
+            filename:'aboutMe.html',
+            template:'./src/pages/aboutMe.html',
+            chunks:['aboutMe']
+        })
+    ],
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><h2 id="_10-webpack-全局引入三方库"><a href="#_10-webpack-全局引入三方库" class="header-anchor">#</a> 10.webpack 全局引入三方库</h2> <ol><li>安装 npm i jquery</li> <li>导入 import $ from 'jquery'</li> <li>使用$</li></ol> <p>由于 第三方库 所有页面都要用到，需要挂载在全局的window上</p> <p>方法：</p> <ol><li>配置webpack.config.js</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>const webpack = require('webpack');
+plugins: [
+	new webpack.ProvidePlugin({
+            $: 'jquery',
+        }),
+]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h2 id="_11-webpack-生产环境与开发环境"><a href="#_11-webpack-生产环境与开发环境" class="header-anchor">#</a> 11.webpack 生产环境与开发环境</h2> <p>由于 生产打包 和开发打包的配置项不一样，所以需要指定webpack配置</p> <p>webpack.config.js</p> <p>拆成三个文件</p> <blockquote><p>webpack.base.js // webpack的基本文件</p> <p>webpack.dev.js //webpack 开发配置文件</p> <p>webpack.pro.js // webpack 生产配置文件</p></blockquote> <p><strong>webpack 需要合并配置文件</strong></p> <p>安装插件  webpack-merge</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>npm i webpack-merge -D
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ol><li>在根目录下新建build目录</li> <li><strong>package.json</strong></li></ol> <p><strong><code>--config</code></strong> 指定webpack配置文件</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&quot;scripts&quot;: {
+    &quot;dev&quot;: &quot;webpack-dev-server --config ./build/webpack.dev.js&quot;,
+    &quot;build&quot;: &quot;webpack --config ./build/webpack.prod.js&quot;
+  },
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><code>webpack.base.js</code></p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> HtmlWebpackPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'html-webpack-plugin'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> webpack <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'webpack'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 多个入口，就会有多个出口</span>
+    entry<span class="token operator">:</span> <span class="token punctuation">{</span>
+        home<span class="token operator">:</span><span class="token string">'./src/js/home.js'</span><span class="token punctuation">,</span>
+        aboutMe<span class="token operator">:</span><span class="token string">'./src/js/aboutMe.js'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    output<span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 打包文件名</span>
+        filename<span class="token operator">:</span> <span class="token string">'js/[name].js'</span><span class="token punctuation">,</span>
+        <span class="token comment">// 打包后的路径，必须是绝对路径</span>
+        path<span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'dist'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// webpack-dev-server配置</span>
+    plugins<span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token comment">// 配置home 页</span>
+        <span class="token keyword">new</span> <span class="token class-name">HtmlWebpackPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            filename<span class="token operator">:</span><span class="token string">'home.html'</span><span class="token punctuation">,</span>
+            template<span class="token operator">:</span><span class="token string">'./src/pages/home.html'</span><span class="token punctuation">,</span>
+            <span class="token comment">// 每个页面只加载自己的js</span>
+            chunks<span class="token operator">:</span><span class="token punctuation">[</span><span class="token string">'home'</span><span class="token punctuation">]</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token keyword">new</span> <span class="token class-name">HtmlWebpackPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            filename<span class="token operator">:</span><span class="token string">'aboutMe.html'</span><span class="token punctuation">,</span>
+            template<span class="token operator">:</span><span class="token string">'./src/pages/aboutMe.html'</span><span class="token punctuation">,</span>
+            chunks<span class="token operator">:</span><span class="token punctuation">[</span><span class="token string">'aboutMe'</span><span class="token punctuation">]</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token keyword">new</span> <span class="token class-name">webpack<span class="token punctuation">.</span>ProvidePlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            $<span class="token operator">:</span> <span class="token string">'jquery'</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 配置loader</span>
+    module<span class="token operator">:</span><span class="token punctuation">{</span>
+        rules<span class="token operator">:</span><span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+                test<span class="token operator">:</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.css$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+                <span class="token comment">// user 从左往右</span>
+                use<span class="token operator">:</span><span class="token punctuation">[</span><span class="token string">'style-loader'</span><span class="token punctuation">,</span><span class="token punctuation">{</span>
+                    loader<span class="token operator">:</span><span class="token string">'css-loader'</span><span class="token punctuation">,</span>
+                    options<span class="token operator">:</span><span class="token punctuation">{</span>
+                        esModule<span class="token operator">:</span><span class="token boolean">false</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                test<span class="token operator">:</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.less$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+                <span class="token comment">// user 从左往右</span>
+                use<span class="token operator">:</span><span class="token punctuation">[</span><span class="token string">'style-loader'</span><span class="token punctuation">,</span><span class="token string">'css-loader'</span><span class="token punctuation">,</span><span class="token string">'less-loader'</span><span class="token punctuation">]</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                test<span class="token operator">:</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.scss$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+                <span class="token comment">// user 从左往右</span>
+                use<span class="token operator">:</span><span class="token punctuation">[</span><span class="token string">'style-loader'</span><span class="token punctuation">,</span><span class="token string">'css-loader'</span><span class="token punctuation">,</span><span class="token string">'sass-loader'</span><span class="token punctuation">]</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                test<span class="token operator">:</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.(png|jpg)$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+                <span class="token comment">// user 从左往右</span>
+                loader<span class="token operator">:</span><span class="token string">'url-loader'</span><span class="token punctuation">,</span>
+                <span class="token comment">// 配置项</span>
+                options<span class="token operator">:</span><span class="token punctuation">{</span>
+                    esModule<span class="token operator">:</span><span class="token boolean">false</span><span class="token punctuation">,</span>
+                    <span class="token comment">// 如果大于 16kb 的图片就不处理 base64</span>
+                    limit<span class="token operator">:</span><span class="token number">16</span><span class="token operator">*</span><span class="token number">1024</span><span class="token punctuation">,</span>
+                    <span class="token comment">// 修改打包图片的名字</span>
+                    name<span class="token operator">:</span><span class="token string">'[hash:4].[ext]'</span><span class="token punctuation">,</span>
+                    <span class="token comment">// 配置图片输出路径</span>
+                    outputPath<span class="token operator">:</span><span class="token string">'imgs'</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                test<span class="token operator">:</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.html$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+                loader<span class="token operator">:</span><span class="token string">'html-loader'</span><span class="token punctuation">,</span>
+                options<span class="token operator">:</span><span class="token punctuation">{</span>
+                    esModule<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                test<span class="token operator">:</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.js$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+                loader<span class="token operator">:</span><span class="token string">'babel-loader'</span><span class="token punctuation">,</span>
+                <span class="token comment">// 除了这个文件夹之外的文件</span>
+                exclude<span class="token operator">:</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">node_modules</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+                options<span class="token operator">:</span> <span class="token punctuation">{</span>
+                    presets<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'@babel/env'</span><span class="token punctuation">]</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br></div></div><p><code>webpack.dev.js</code></p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">const</span> <span class="token punctuation">{</span> merge <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'webpack-merge'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> baseConfig <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./webpack.base'</span><span class="token punctuation">)</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token function">merge</span><span class="token punctuation">(</span>baseConfig<span class="token punctuation">,</span><span class="token punctuation">{</span>
+    <span class="token comment">// development（开发）production（生产）</span>
+    mode<span class="token operator">:</span><span class="token string">'development'</span><span class="token punctuation">,</span>
+    <span class="token comment">// webpack-dev-server配置</span>
+    devServer<span class="token operator">:</span><span class="token punctuation">{</span>
+        open<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token keyword">static</span><span class="token operator">:</span> <span class="token string">'public'</span><span class="token punctuation">,</span>
+        port<span class="token operator">:</span> <span class="token number">5000</span><span class="token punctuation">,</span>
+        hot<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        compress<span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    devtool<span class="token operator">:</span><span class="token string">'eval-cheap-module-source-map'</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p><code>webpack.prod.js</code></p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">const</span> <span class="token punctuation">{</span> merge <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'webpack-merge'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> baseConfig <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./webpack.base'</span><span class="token punctuation">)</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token function">merge</span><span class="token punctuation">(</span>baseConfig<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token comment">// development（开发）production（生产）</span>
+    mode<span class="token operator">:</span><span class="token string">'production'</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>运行npm run build 后会打包在build文件夹下面 如何解决</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>output<span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 打包文件名</span>
+        filename<span class="token operator">:</span> <span class="token string">'js/[name].js'</span><span class="token punctuation">,</span>
+        <span class="token comment">// 打包后的路径，必须是绝对路径</span>
+        path<span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'../dist'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h2 id="_12-webpack处理跨域问题"><a href="#_12-webpack处理跨域问题" class="header-anchor">#</a> 12.webpack处理跨域问题</h2> <blockquote><p>浏览器同源策略：域名 协议 端口 三者有一个不同就会出现跨域</p></blockquote> <p>解决跨域方案</p> <ul><li>CORS 处理 （后端）
+<ul><li>问题：数据不安全</li></ul></li> <li>JSONP （前端） 利用script 标签 src 属性实现跨域
+<ul><li>问题：只能处理get请求</li></ul></li> <li>Nginx 反向代理</li> <li>使用webpack   代理</li></ul> <p><code>webpack.dev.js</code></p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>devServer<span class="token operator">:</span><span class="token punctuation">{</span>
+        proxy<span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token string">&quot;/api&quot;</span><span class="token operator">:</span><span class="token string">&quot;http://localhost:666&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h2 id="_13-css-文件分离"><a href="#_13-css-文件分离" class="header-anchor">#</a> 13.css 文件分离</h2> <p>1.下载 <code>npm i mini-css-extract-plugin -D</code></p> <blockquote><p>将之前的style-loader 替换成 MiniCssExtractPlugin.loader</p></blockquote> <p>webpack.base.js</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">const</span> MiniCssExtractPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'mini-css-extract-plugin'</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+plugins<span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token keyword">new</span> <span class="token class-name">MiniCssExtractPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            filename<span class="token operator">:</span> <span class="token string">'css/[name].css'</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+module<span class="token operator">:</span><span class="token punctuation">{</span>
+      	rules<span class="token operator">:</span><span class="token punctuation">[</span>
+      		<span class="token punctuation">{</span>
+                test<span class="token operator">:</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.css$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+                <span class="token comment">// user 从右往左</span>
+                use<span class="token operator">:</span><span class="token punctuation">[</span><span class="token punctuation">{</span>
+                    loader<span class="token operator">:</span>MiniCssExtractPlugin<span class="token punctuation">.</span>loader
+                <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span>
+                    loader<span class="token operator">:</span><span class="token string">'css-loader'</span><span class="token punctuation">,</span>
+                    options<span class="token operator">:</span><span class="token punctuation">{</span>
+                        esModule<span class="token operator">:</span><span class="token boolean">false</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span>
+                test<span class="token operator">:</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.less$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+                <span class="token comment">// user 从右往左</span>
+                use<span class="token operator">:</span><span class="token punctuation">[</span><span class="token punctuation">{</span>
+                    loader<span class="token operator">:</span>MiniCssExtractPlugin<span class="token punctuation">.</span>loader
+                <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token string">'css-loader'</span><span class="token punctuation">,</span><span class="token string">'less-loader'</span><span class="token punctuation">]</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                test<span class="token operator">:</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.scss$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+                <span class="token comment">// user 从右往左</span>
+                use<span class="token operator">:</span><span class="token punctuation">[</span><span class="token punctuation">{</span>
+                    loader<span class="token operator">:</span>MiniCssExtractPlugin<span class="token punctuation">.</span>loader
+                <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token string">'css-loader'</span><span class="token punctuation">,</span><span class="token string">'sass-loader'</span><span class="token punctuation">]</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      	<span class="token punctuation">]</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br></div></div></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">2022/6/26 18:51:57</span></div></footer> <!----> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-70334359><li class="level-2" data-v-70334359><a href="/blogs/webpack/webpackStudy.html#_1-webpack-核心模块" class="sidebar-link reco-side-_1-webpack-核心模块" data-v-70334359>1.webpack 核心模块</a></li><li class="level-2" data-v-70334359><a href="/blogs/webpack/webpackStudy.html#_2-webpack默认配置文件-webpack-config-js" class="sidebar-link reco-side-_2-webpack默认配置文件-webpack-config-js" data-v-70334359>2.webpack默认配置文件：webpack.config.js</a></li><li class="level-2" data-v-70334359><a href="/blogs/webpack/webpackStudy.html#_3-处理css文件" class="sidebar-link reco-side-_3-处理css文件" data-v-70334359>3.处理css文件</a></li><li class="level-2" data-v-70334359><a href="/blogs/webpack/webpackStudy.html#_4-处理less文件" class="sidebar-link reco-side-_4-处理less文件" data-v-70334359>4.处理less文件</a></li><li class="level-2" data-v-70334359><a href="/blogs/webpack/webpackStudy.html#_5-处理sass文件" class="sidebar-link reco-side-_5-处理sass文件" data-v-70334359>5.处理sass文件</a></li><li class="level-2" data-v-70334359><a href="/blogs/webpack/webpackStudy.html#_6-处理图片" class="sidebar-link reco-side-_6-处理图片" data-v-70334359>6.处理图片</a></li><li class="level-2" data-v-70334359><a href="/blogs/webpack/webpackStudy.html#_7-webpack-babel配置" class="sidebar-link reco-side-_7-webpack-babel配置" data-v-70334359>7.webpack babel配置</a></li><li class="level-2" data-v-70334359><a href="/blogs/webpack/webpackStudy.html#_8-sourcemap" class="sidebar-link reco-side-_8-sourcemap" data-v-70334359>8.SourceMap</a></li><li class="level-2" data-v-70334359><a href="/blogs/webpack/webpackStudy.html#_9-webpack-多页面打包" class="sidebar-link reco-side-_9-webpack-多页面打包" data-v-70334359>9.webpack 多页面打包</a></li><li class="level-2" data-v-70334359><a href="/blogs/webpack/webpackStudy.html#_10-webpack-全局引入三方库" class="sidebar-link reco-side-_10-webpack-全局引入三方库" data-v-70334359>10.webpack 全局引入三方库</a></li><li class="level-2" data-v-70334359><a href="/blogs/webpack/webpackStudy.html#_11-webpack-生产环境与开发环境" class="sidebar-link reco-side-_11-webpack-生产环境与开发环境" data-v-70334359>11.webpack 生产环境与开发环境</a></li><li class="level-2" data-v-70334359><a href="/blogs/webpack/webpackStudy.html#_12-webpack处理跨域问题" class="sidebar-link reco-side-_12-webpack处理跨域问题" data-v-70334359>12.webpack处理跨域问题</a></li><li class="level-2" data-v-70334359><a href="/blogs/webpack/webpackStudy.html#_13-css-文件分离" class="sidebar-link reco-side-_13-css-文件分离" data-v-70334359>13.css 文件分离</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-5775ee02>
+      我是lookroot欢迎你的关注 
+    </div> <div class="operation" style="right:90px;bottom:40px;display:none;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:none;" data-v-5775ee02></i></div> <canvas id="banniang" width="150" height="220" class="live2d" style="right:6vw;bottom:1vh;opacity:0.9;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div><div class="reco-bgm-panel" data-v-b1d3339e><audio id="bgm" src="/bgm/你可别卷了.m4a" data-v-b1d3339e></audio> <div class="reco-float-box" style="bottom:200px;z-index:999999;display:none;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><img src="http://p2.music.126.net/pSyOMdsBZPxgrTIu5JwgLA==/109951167026011073.jpg?param=130y130" data-v-b1d3339e></div> <div class="reco-bgm-box" style="left:10px;bottom:10px;z-index:999999;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="reco-bgm-cover" style="background-image:url(http://p2.music.126.net/pSyOMdsBZPxgrTIu5JwgLA==/109951167026011073.jpg?param=130y130);" data-v-b1d3339e><div class="mini-operation" style="display:none;" data-v-b1d3339e><i class="reco-bgm reco-bgm-pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play" style="display:none;" data-v-b1d3339e></i></div> <div class="falut-message" style="display:none;" data-v-b1d3339e>
+          播放失败
+        </div></div> <div class="reco-bgm-info" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-music music" data-v-b1d3339e></i>你可别卷了</div> <div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-artist" data-v-b1d3339e></i>SipSu小口酥 / 灯灯灯泡 / 迟亦骁</div> <div class="reco-bgm-progress" data-v-b1d3339e><div class="progress-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div> <div class="reco-bgm-operation" data-v-b1d3339e><i class="reco-bgm reco-bgm-last last" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-pause pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play play" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-next next" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-volume1 volume" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-mute mute" style="display:none;" data-v-b1d3339e></i> <div class="volume-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div></div> <div class="reco-bgm-left-box" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><i class="reco-bgm reco-bgm-left" data-v-b1d3339e></i></div></div></div><canvas id="vuepress-canvas-cursor"></canvas><canvas id="vuepress-canvas-ribbon"></canvas></div></div>
+    <script src="/assets/js/app.3ff6674a.js" defer></script><script src="/assets/js/3.fb157255.js" defer></script><script src="/assets/js/1.a81a99ec.js" defer></script><script src="/assets/js/30.d2488690.js" defer></script>
+  </body>
+</html>
